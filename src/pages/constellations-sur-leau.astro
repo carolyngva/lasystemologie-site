@@ -1,0 +1,310 @@
+---
+import '../styles/global.css';
+
+const testimonials = [
+  {
+    quote:
+      "J'ai pris conscience d'une loyauté envers ma lignée paternelle, et senti la différence entre ma part adulte et ma part enfant. Tout est très tourné vers le passé.",
+    author: 'J.',
+  },
+  {
+    quote:
+      "Le fait que ce soit sur l'eau permet de lâcher le contrôle et le mental. L'eau fait partie de nous, le champ énergétique de l'âme y est connecté.",
+    author: 'Anonyme',
+  },
+  {
+    quote:
+      "J'ai compris que m'autoriser à dépasser et réussir mieux que ma mère est la clé. La douceur, la clarté, la guidance... la beauté du plateau aussi.",
+    author: 'Angèle',
+  },
+  {
+    quote:
+      "L'expérience de l'eau est innovante et les personnages bougent au gré du champ. Caroline offre un accompagnement précieux et bienveillant.",
+    author: 'Nathalie',
+  },
+];
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constellation sur l'eau en visio | Systémologie</title>
+    <meta
+      name="description"
+      content="Une constellation sur l'eau en visio avec Caroline. Explorer un schéma qui se répète, en individuel. Tarif : 80 CHF."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.png" />
+    <style is:inline>
+      .hero-eau {
+        position: relative;
+        width: 100%;
+        height: clamp(480px, 70vh, 680px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .hero-eau-bg {
+        position: absolute;
+        inset: 0;
+        background:
+          url('/hero-constellation-eau.jpg') center / cover no-repeat;
+      }
+      .hero-eau-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          145deg,
+          rgba(62, 61, 71, 0.72) 0%,
+          rgba(62, 61, 71, 0.38) 60%,
+          rgba(62, 61, 71, 0.18) 100%
+        );
+      }
+      .hero-eau-content {
+        position: relative;
+        z-index: 2;
+        width: min(700px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 48px;
+        border-radius: 44px;
+        background: rgba(251, 247, 241, 0.88);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 24px 70px rgba(62, 61, 71, 0.15);
+        text-align: center;
+        margin-top: 80px;
+      }
+      .hero-eau-title {
+        margin: 0 0 12px;
+        font-family: Bitter, Georgia, serif;
+        font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+        font-weight: 600;
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+        color: var(--text);
+      }
+      .hero-eau-subtitle {
+        margin: 0 0 20px;
+        font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+        color: var(--muted);
+        line-height: 1.4;
+      }
+      .hero-eau-meta {
+        margin: 0 0 32px;
+        color: var(--muted);
+        font-size: 1.1rem;
+      }
+      @media (max-width: 900px) {
+        .hero-eau {
+          height: auto;
+          min-height: 460px;
+          align-items: flex-start;
+          padding-top: 80px;
+        }
+        .hero-eau-content {
+          margin-top: 0;
+          padding: 32px 24px;
+          border-radius: 28px;
+        }
+        .video-row {
+          grid-template-columns: 1fr !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Accueil Systémologie">
+        <img src="/logo-systemologie.png" alt="Systémologie" />
+      </a>
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="/#karma-reset">Karma Reset</a>
+        <a href="/#constellations-en-ligne">En ligne</a>
+        <a href="/constellations-sur-leau">Sur l'eau</a>
+        <a href="/#faq">FAQ</a>
+      </nav>
+      <a class="header-cta" href="/#inscription">Recevoir les dates</a>
+    </header>
+
+    <main id="top">
+      <section class="hero-eau">
+        <div class="hero-eau-bg"></div>
+        <div class="hero-eau-overlay"></div>
+        <div class="hero-eau-content">
+          <h1 class="hero-eau-title">Constellation sur l'eau</h1>
+          <p class="hero-eau-subtitle">Quand un schéma se répète, le système a quelque chose à montrer.</p>
+          <p class="hero-eau-meta">Individuel &middot; En visio &middot; 80 CHF</p>
+          <a class="button primary" href="https://carolineverdier.kneo.me/form/178988296cf53c8e.html" target="_blank">Réserver une constellation sur l'eau</a>
+        </div>
+      </section>
+
+      <section class="intro section-shell narrow">
+        <p class="eyebrow">Pour qui ?</p>
+        <h2>Tu vois le schéma, mais tu n'arrives pas à t'en défaire.</h2>
+        <p>
+          Tu te vois rejouer toujours la même chose : le même type de relation, la même manière de quitter un travail, les mêmes dynamiques qui reviennent dans ton équipe ou dans ta famille.
+        </p>
+        <p>
+          La constellation sur l'eau permet d'aller chercher en transgénérationnel d'où vient ce schéma, de trouver le nœud, et de le libérer.
+        </p>
+      </section>
+
+      <div class="section-bg-water">
+        <section class="split section-shell">
+        <div>
+          <p class="eyebrow">Pourquoi l'eau ?</p>
+          <h2>Une histoire de famille</h2>
+        </div>
+        <div class="body-copy">
+          <p>
+            Je n'ai pas toujours été à l'aise avec l'eau. Pendant longtemps, elle m'a fait peur. Aujourd'hui, je suis passée d'une peur à un outil précieux : l'eau est devenue mon support pour rendre visible ce qui ne se voit pas.
+          </p>
+          <p>
+            Le récipient que j'utilise est celui de mon arrière-grand-mère. Les figurines, je les ai peintes à la main en famille. Tout cela a un sens : plus on travaille en constellation familiale, plus le lien à l'autre guérit et devient sain. Je l'ai vécu.
+          </p>
+          <p class="price" style="margin-top: 32px;">50+ constellations accompagnées</p>
+        </div>
+        </section>
+      </div>
+
+      <section class="section-shell narrow">
+        <div class="section-heading">
+          <p class="eyebrow">Comment ça se passe ?</p>
+          <h2>Un format simple, en visio, en individuel.</h2>
+        </div>
+        <div style="display: grid; gap: 24px;">
+          <div class="offer-panel">
+            <p>La séance dure 1h à 1h20 sur Zoom. Les constellations ont lieu l'après-midi en semaine. L'ordinateur est recommandé plutôt que le téléphone, car tu verras deux écrans : moi et le récipient avec l'eau et les petits personnages.</p>
+          </div>
+          <div class="offer-panel water">
+            <h3>Déroulé</h3>
+            <ul>
+              <li>Tu exposes ton thème ou ta question.</li>
+              <li>Les éléments du système sont représentés sur l'eau avec les figurines.</li>
+              <li>Le mouvement est observé, nommé, accompagné.</li>
+              <li>Les phrases de libération sont dites pendant la séance.</li>
+              <li>Si nécessaire, un rituel est proposé pour prolonger le mouvement (pas systématique).</li>
+            </ul>
+          </div>
+          <div class="offer-panel">
+            <h3>Tu repars avec</h3>
+            <p>Une sensation d'apaisement et de légèreté. Parfois une compréhension qui fait son chemin après la séance. Souvent, un mouvement intérieur qui continue de travailler.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-bg-warm">
+        <section class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Exemples en vidéo</p>
+          <h2>Voir ce que l'eau rend visible.</h2>
+        </div>
+        <div style="display: grid; gap: 32px;">
+          <div class="video-row" style="display: grid; gap: 24px; grid-template-columns: 0.28fr 1fr; align-items: start;">
+            <video controls autoplay muted loop playsinline preload="auto" style="width: 100%; max-width: 260px; aspect-ratio: 3/4; object-fit: cover; border-radius: 20px; border: 1px solid rgba(203, 174, 145, 0.22);">
+              <source src="/video-constellation-eau-1.mp4" type="video/mp4" />
+            </video>
+            <div>
+              <p class="eyebrow" style="margin-bottom: 8px;">Exemple 1</p>
+              <p>Elle revenait. Pas parce qu'elle n'avait pas travaillé sur elle. Parce qu'un schéma se répétait.</p>
+              <p>Un deuxième burn-out. Une déconnexion totale d'elle-même. Une colère qu'elle ne savait même pas qu'elle portait.</p>
+              <p>Dans l'eau, les figurines ont raconté une histoire enfouie. Un abus vécu toute petite. Une enfant qui avait survécu en se coupant d'elle-même. Ce mécanisme qui l'avait protégée alors... c'est lui qui l'épuisait aujourd'hui.</p>
+            </div>
+          </div>
+          <div class="video-row" style="display: grid; gap: 24px; grid-template-columns: 0.28fr 1fr; align-items: start;">
+            <video controls autoplay muted loop playsinline preload="auto" style="width: 100%; max-width: 260px; aspect-ratio: 3/4; object-fit: cover; border-radius: 20px; border: 1px solid rgba(203, 174, 145, 0.22);">
+              <source src="/video-constellation-eau-2.mp4" type="video/mp4" />
+            </video>
+            <div>
+              <p class="eyebrow" style="margin-bottom: 8px;">Exemple 2</p>
+              <p>Elle pensait qu'elle se dispersait dans son business. En constellation, on a découvert autre chose.</p>
+              <p>Une cliente arrive en séance. Elle a les idées, l'énergie, la vision. Mais elle n'avance pas. Ce n'était pas un problème de stratégie, ni de compétences, ni d'organisation. C'était le passé qui la retenait.</p>
+              <p>Des échecs non digérés. Et surtout, une loyauté silencieuse à sa mère. Ce fil invisible qui disait : tu n'as pas le droit de réussir mieux, d'être plus heureuse, de vouloir plus.</p>
+              <p>Dans l'eau, le mouvement est devenu visible. Elle a regardé ses échecs autrement. Elle a rendu à sa mère ce qui ne lui appartenait pas. Et pour la première fois, elle a osé dire ce qu'elle veut vraiment.</p>
+            </div>
+          </div>
+          <div class="video-row" style="display: grid; gap: 24px; grid-template-columns: 0.28fr 1fr; align-items: start;">
+            <video controls autoplay muted loop playsinline preload="auto" style="width: 100%; max-width: 260px; aspect-ratio: 3/4; object-fit: cover; border-radius: 20px; border: 1px solid rgba(203, 174, 145, 0.22);">
+              <source src="/video-constellation-eau-3.mp4" type="video/mp4" />
+            </video>
+            <div>
+              <p class="eyebrow" style="margin-bottom: 8px;">Exemple 3</p>
+              <p>Elle vient avec une question professionnelle. Elle est artiste mais quelque chose ne circule plus. Comme si sa place n'était pas disponible pour elle.</p>
+              <p>Le blocage professionnel est un symptôme. Très vite, une ancienne relation apparaît. Un lien qui la maintient attachée au passé.</p>
+              <p>Nous remettons chacun à sa place. Nous relâchons ce qui ne lui appartient pas. Et pendant la séance, une part d'elle, liée à sa créativité et à son enfant intérieur, est restée bloquée aussi.</p>
+              <p>Parce que parfois, debloquer une situation demande deux choses : remettre de l'ordre dans le systeme, et recuperer les parts de nous qui sont restees ailleurs.</p>
+            </div>
+          </div>
+        </div>
+        </section>
+      </div>
+
+      <div class="section-bg-violet">
+        <section class="testimonials section-shell" id="testimonials">
+        <div class="section-heading">
+          <p class="eyebrow">Témoignages</p>
+          <h2>Ce que les clientes en disent.</h2>
+        </div>
+        <div class="testimonial-grid">
+          {testimonials.map((testimonial) => (
+            <figure>
+              <blockquote>"{testimonial.quote}"</blockquote>
+              <figcaption>{testimonial.author}</figcaption>
+            </figure>
+          ))}
+        </div>
+        </section>
+      </div>
+
+      <section class="section-shell narrow">
+        <div class="section-heading">
+          <p class="eyebrow">Ce que ça n'est pas</p>
+          <h2>Un cadre clair et responsable.</h2>
+        </div>
+        <div class="offer-panel">
+          <p>
+            Les constellations sont un outil expérientiel complémentaire. Elles ne remplacent pas une thérapie, un suivi psychologique ou médical structuré.
+          </p>
+          <p style="margin-bottom: 0;">
+            La constellation sur l'eau travaille spécifiquement sur le plan transgénérationnel et systémique : rendre visible ce qui se répète, comprendre d'où ça vient, libérer le nœud. C'est un espace pour voir autrement, pas pour tout résoudre en une séance.
+          </p>
+        </div>
+      </section>
+
+      <div class="section-bg-water">
+        <section class="cta-final section-shell" style="text-align: center;">
+        <p class="eyebrow">Prête à explorer ton schéma ?</p>
+        <h2 style="max-width: 700px; margin: 0 auto 18px;">Constellation sur l'eau avec Caroline</h2>
+        <p style="color: var(--muted); margin-bottom: 34px;">
+          Individuel &middot; Visio &middot; 80 CHF &middot; 1h-1h20
+        </p>
+        <a class="button primary" href="https://carolineverdier.kneo.me/form/178988296cf53c8e.html" target="_blank" style="font-size: 1.1rem; padding: 16px 36px;">
+          Réserver maintenant
+        </a>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Systémologie</p>
+          <p>Constellations familiales et systémiques, Genève & en ligne.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://lasystemologie.com/">lasystemologie.com</a>
+          <a href="mailto:info@lasystemologie.com">info@lasystemologie.com</a>
+          <a href="/mentions-legales">Mentions légales</a>
+          <a href="/cgv">CGV</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
