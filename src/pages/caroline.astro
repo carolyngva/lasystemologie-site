@@ -1,0 +1,304 @@
+---
+import '../styles/global.css';
+import '../styles/design-system.css';
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caroline Verdier — Constellations familiales à Genève | Systémologie</title>
+    <meta
+      name="description"
+      content="Caroline Verdier, constellatrice à Genève. Supply chain, oracle et constellations familiales. Un parcours entre logistique, intuition et systèmes invisibles."
+    />
+    <link rel="canonical" href="https://lasystemologie.com/caroline/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Caroline Verdier — Constellations familiales à Genève | Systémologie" />
+    <meta property="og:description" content="Caroline Verdier, constellatrice à Genève. Supply chain, oracle et constellations familiales." />
+    <meta property="og:url" content="https://lasystemologie.com/caroline/" />
+    <meta property="og:image" content="https://lasystemologie.com/portrait-caroline.png" />
+    <meta property="og:site_name" content="Systémologie" />
+    <meta property="og:locale" content="fr_CH" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Caroline Verdier — Constellations familiales | Systémologie" />
+    <meta name="twitter:description" content="Caroline Verdier, constellatrice à Genève. Supply chain, oracle et constellations familiales." />
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://lasystemologie.com/#organization",
+            "name": "Systémologie",
+            "url": "https://lasystemologie.com",
+            "logo": "https://lasystemologie.com/logo-systemologie.png",
+            "email": "info@lasystemologie.com",
+            "address": { "@type": "PostalAddress", "addressLocality": "Genève", "addressCountry": "CH" },
+            "founder": [
+              { "@type": "Person", "name": "Caroline Verdier", "url": "https://lasystemologie.com/caroline" },
+              { "@type": "Person", "name": "Hehoa Alvarez", "url": "https://lasystemologie.com/eloa" }
+            ],
+            "knowsAbout": "Constellations familiales et systémiques"
+          },
+          {
+            "@type": "Person",
+            "name": "Caroline Verdier",
+            "url": "https://lasystemologie.com/caroline",
+            "image": "https://lasystemologie.com/portrait-caroline.png",
+            "jobTitle": "Constellatrice",
+            "knowsAbout": ["Constellations familiales", "Constellations systémiques", "Constellations sur l'eau"],
+            "affiliation": { "@id": "https://lasystemologie.com/#organization" }
+          }
+        ]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.png" />
+    <style is:inline>
+      .about-hero {
+        position: relative;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 56px;
+        padding-top: 160px;
+        padding-bottom: 110px;
+        overflow: hidden;
+      }
+      .about-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 80% 60% at 20% 30%, rgba(44, 30, 64, 0.6) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .about-hero-fleur {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: min(1100px, 100%);
+        height: auto;
+        aspect-ratio: 1;
+        background: url('/fleurdevieindigo.webp') center / contain no-repeat;
+        opacity: 0.2;
+        pointer-events: none;
+        z-index: 0;
+        filter: brightness(1.35) saturate(0.9);
+        transform: translate(-50%, -50%);
+      }
+      .about-hero-text {
+        position: relative;
+        z-index: 2;
+      }
+      .about-hero-text h1 {
+        font-size: clamp(2.4rem, 5vw, 4rem);
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        max-width: 700px;
+        margin-bottom: 16px;
+      }
+      .about-hero-text p {
+        color: rgba(254, 252, 243, 0.7);
+        font-size: 1.15rem;
+        line-height: 1.6;
+        max-width: 560px;
+      }
+      .about-hero-img {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+      }
+      .about-hero-img img {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        border-radius: 32px;
+        border: 1px solid rgba(254, 252, 243, 0.1);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+      }
+      .timeline {
+        display: grid;
+        gap: 48px;
+      }
+      .timeline-item {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 32px;
+      }
+      .timeline-year {
+        color: var(--or-solaire, #F2B33D);
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-align: right;
+      }
+      .timeline-content h3 {
+        margin-bottom: 8px;
+      }
+      .timeline-content p {
+        color: rgba(254, 252, 243, 0.7);
+        line-height: 1.7;
+      }
+      @media (max-width: 900px) {
+        .about-hero {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          padding-top: 110px;
+        }
+        .about-hero-img img {
+          max-width: 280px;
+        }
+        .timeline-item {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+        .timeline-year {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Accueil Systémologie">
+        <img src="/logo-systemologie-white.png" alt="Systémologie" />
+      </a>
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="/a-propos">À propos</a>
+        <a href="/#karma-reset">Karma Reset</a>
+        <a href="/#constellations-en-ligne">En ligne</a>
+        <a href="/constellations-sur-leau">Sur l'eau</a>
+        <a href="/#faq">FAQ</a>
+      </nav>
+      <a class="header-cta" href="/#inscription">Recevoir les dates</a>
+    </header>
+
+    <main>
+      <div class="section-bg-dark">
+        <section class="about-hero section-shell">
+          <div class="about-hero-fleur"></div>
+          <div class="about-hero-text">
+            <p class="eyebrow">Caroline Verdier</p>
+            <h1>Une planificatrice qui croit aux forces invisibles.</h1>
+            <p>
+              Supply chain, oracle, constellations familiales. Caroline explore la voie du milieu entre rigueur des systèmes et écoute des forces invisibles.
+            </p>
+          </div>
+          <div class="about-hero-img">
+            <img src="/portrait-caroline.png" alt="Portrait de Caroline Verdier" loading="eager" />
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
+        <section class="section-shell narrow">
+          <p class="eyebrow" style="text-align: center;">Son parcours</p>
+          <h2 style="text-align: center; max-width: 720px; margin: 0 auto 48px;">De la logistique internationale aux constellations familiales.</h2>
+          <div class="body-copy" style="max-width: 720px; margin: 0 auto;">
+            <p>
+              Pendant plus de 20 ans, Caroline a coordonné des flux logistiques, déployé des ERP, géré des plannings et optimisé des process dans des multinationales — l'aviation, la medtech, les biens de consommation, le transport international. Elle aime les systèmes, la rigueur et l'organisation.
+            </p>
+            <p>
+              Parallèlement, elle a créé une activité indépendante autour des relations, des oracles, des constellations et de l'accompagnement des femmes. Elle a traversé deux burn-out qui lui ont appris ce que son mental seul ne pouvait pas lui enseigner : son corps lui parle.
+            </p>
+            <p>
+              Aujourd'hui, elle est constellatrice certifiée et co-anime les journées Karma Reset avec Eloa à Genève. Elle propose également des constellations sur l'eau en visio, un format individuel qu'elle a développé à partir de son histoire personnelle avec l'eau.
+            </p>
+            <p style="margin-top: 32px;">
+              <a class="button primary" href="/constellations-sur-leau">Réserver une constellation sur l'eau</a>
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-violet">
+        <section class="section-shell narrow">
+          <p class="eyebrow" style="text-align: center;">Les étapes qui l'ont construite</p>
+          <h2 style="text-align: center; max-width: 600px; margin: 0 auto 48px;">Un chemin entre logistique et intuition.</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">2003 — 2014</div>
+              <div class="timeline-content">
+                <h3>Les racines — Supply Chain & Coordination</h3>
+                <p>Plus de 10 ans dans la logistique internationale : coordination de flux, ERP, process, KPI. De la logistique à Genève aux arômes chez Firmenich, de la medtech chez BD à la pharma cold chain. Formations : BTS Commerce International, Cambridge English.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2014 — 2016</div>
+              <div class="timeline-content">
+                <h3>Le grand large — Voyages et reconnexion</h3>
+                <p>Deux années de sabbatique et de voyage. Pérou, Bolivie, Argentine, Chili, Île de Pâques, Polynésie, Thaïlande, Japon. Un moment fondateur : retrouver le corps, la nature, la lenteur. Formation : Hatha Vinyasa Yoga Teacher Training.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2018 — 2023</div>
+              <div class="timeline-content">
+                <h3>L'éveil — Accompagnement, burn-out, création</h3>
+                <p>Création de son activité indépendante. Deux burn-out traversés. Naissance de l'oracle D'une Rive à l'Autre (42 cartes). Formations : Certificat en hypnose spirituelle (IIHS, 2018), Relationship Coach Certificate (The Relationship School, 2021).</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2025 — 2026</div>
+              <div class="timeline-content">
+                <h3>L'invisible — Constellations et Systémologie</h3>
+                <p>Formation en constellations familiales et systémiques (L'Athanor, 2026), spécialisation sur l'eau (Paula Eskinazi, 2026), BodyWise pour le système nerveux (2025). Co-création de Systémologie avec Eloa. Lancement des Karma Reset à Genève.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-dark">
+        <section class="section-shell narrow" style="text-align: center;">
+          <p class="eyebrow">Ce qui la guide</p>
+          <h2 style="max-width: 700px; margin: 0 auto 18px;">Quelques phrases qui inspirent son travail.</h2>
+          <div style="max-width: 640px; margin: 0 auto; display: grid; gap: 24px;">
+            <div class="offer-panel" style="text-align: left;">
+              <p style="font-style: italic; margin-bottom: 0;">"S'isoler n'est pas le chemin. Me laisser happer par le monde non plus. J'explore la voie du milieu."</p>
+            </div>
+            <div class="offer-panel" style="text-align: left;">
+              <p style="font-style: italic; margin-bottom: 0;">"Le corps n'est pas le problème. Il est le traducteur que l'intuition utilise pour se faire entendre."</p>
+            </div>
+            <div class="offer-panel" style="text-align: left;">
+              <p style="font-style: italic; margin-bottom: 0;">"On peut décider de déconstruire son armure avant qu'elle nous brise. Le choix précède la souffrance."</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
+        <section class="section-shell narrow" style="text-align: center;">
+          <p class="eyebrow">Travailler avec Caroline</p>
+          <h2 style="max-width: 600px; margin: 0 auto 18px;">Explorer un schéma qui se répète, en individuel ou en groupe.</h2>
+          <p style="color: var(--ardoise); margin-bottom: 34px;">Constellation sur l'eau en visio, ou journée Karma Reset à Genève.</p>
+          <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+            <a class="button primary" href="/constellations-sur-leau">Découvrir la constellation sur l'eau</a>
+            <a class="button secondary" href="/#karma-reset">Voir les Karma Reset</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Systémologie</p>
+          <p>Constellations familiales et systémiques, Genève & en ligne.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://lasystemologie.com/">lasystemologie.com</a>
+          <a href="mailto:info@lasystemologie.com">info@lasystemologie.com</a>
+          <a href="/mentions-legales">Mentions légales</a>
+          <a href="/cgv">CGV</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

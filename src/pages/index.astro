@@ -1,7 +1,18 @@
 ---
 import '../styles/global.css';
+import '../styles/design-system.css';
 
 const testimonials = [
+  {
+    quote:
+      "Cette journée m'a révélé plusieurs choses sur moi, ma vie, où j'en suis et où je vais. Des aspects de mon passé et de mes ancêtres ont été évoqués, ce qui m'éclaire sur mon comportement et mes choix.",
+    author: 'T.S',
+  },
+  {
+    quote:
+      "J'ai fait une constellation familiale sans trop savoir à quoi m'attendre. J'y ai compris des choses que je portais depuis longtemps, sans avoir besoin de longues explications.",
+    author: 'Sonia',
+  },
   {
     quote:
       "Je me suis sentie bien accompagnée, en sécurité. Vous nous faites nous sentir en confiance.",
@@ -16,6 +27,11 @@ const testimonials = [
     quote:
       "J'ai pu voir l'impact sans avoir fait ma constellation. Je sens que les choses bougent encore de mon côté quelques jours après.",
     author: 'Christian',
+  },
+  {
+    quote:
+      "J'ai participé en tant que représentante. C'est très impressionnant de se sentir partir dans une histoire qui n'est pas la nôtre. J'ai apprécié le cadre, la bienveillance et la bonne ambiance de la journée.",
+    author: 'Participante',
   },
 ];
 
@@ -73,15 +89,100 @@ const karmaResetArchives = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Constellations familiales à Genève | Systémologie</title>
+    <title>Constellations familiales et systémiques | Systémologie</title>
     <meta
       name="description"
-      content="Systémologie propose des constellations familiales et systémiques à Genève, en ligne et sur l'eau, dans un cadre clair, humain et sécurisant."
+      content="Systémologie propose des constellations familiales et systémiques, en ligne et en présentiel, pour rendre visibles les dynamiques qui se répètent."
     />
+    <link rel="canonical" href="https://lasystemologie.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Constellations familiales et systémiques | Systémologie" />
+    <meta property="og:description" content="Systémologie propose des constellations familiales et systémiques, en ligne et en présentiel, pour rendre visibles les dynamiques qui se répètent." />
+    <meta property="og:url" content="https://lasystemologie.com/" />
+    <meta property="og:image" content="https://lasystemologie.com/logo-systemologie.png" />
+    <meta property="og:site_name" content="Systémologie" />
+    <meta property="og:locale" content="fr_CH" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Constellations familiales et systémiques | Systémologie" />
+    <meta name="twitter:description" content="Systémologie propose des constellations familiales et systémiques, en ligne et en présentiel, pour rendre visibles les dynamiques qui se répètent." />
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://lasystemologie.com/#organization",
+            "name": "Systémologie",
+            "url": "https://lasystemologie.com",
+            "logo": "https://lasystemologie.com/logo-systemologie.png",
+            "description": "Constellations familiales et systémiques, en ligne et en présentiel.",
+            "email": "info@lasystemologie.com",
+            "address": { "@type": "PostalAddress", "addressLocality": "Genève", "addressCountry": "CH" },
+            "founder": [
+              { "@type": "Person", "name": "Caroline Verdier", "url": "https://lasystemologie.com/caroline" },
+              { "@type": "Person", "name": "Hehoa Alvarez", "url": "https://lasystemologie.com/eloa" }
+            ],
+            "knowsAbout": "Constellations familiales et systémiques"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://lasystemologie.com/#website",
+            "name": "Systémologie",
+            "url": "https://lasystemologie.com",
+            "publisher": { "@id": "https://lasystemologie.com/#organization" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://lasystemologie.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Où ont lieu les constellations familiales à Genève ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Les journées Karma Reset ont lieu à Genève. Les prochaines dates seront annoncées via la newsletter Intrications." }
+              },
+              {
+                "@type": "Question",
+                "name": "Peut-on faire une constellation en ligne ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Oui. Il est possible de recevoir sa constellation en ligne avec un groupe de représentants." }
+              },
+              {
+                "@type": "Question",
+                "name": "Faut-il venir avec un thème précis ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Un thème clair peut aider, mais ce n'est pas obligatoire. Une sensation de répétition, de blocage ou de question intérieure peut suffire." }
+              },
+              {
+                "@type": "Question",
+                "name": "Les constellations remplacent-elles une thérapie ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Non. Les constellations sont un outil expérientiel complémentaire. Elles ne remplacent pas un suivi psychologique, médical ou thérapeutique structuré." }
+              }
+            ]
+          },
+          {
+            "@type": "Service",
+            "name": "Karma Reset à Genève",
+            "description": "Journée de constellations familiales et systémiques en groupe à Genève.",
+            "provider": { "@id": "https://lasystemologie.com/#organization" },
+            "areaServed": { "@type": "City", "name": "Genève" }
+          },
+          {
+            "@type": "Service",
+            "name": "Constellation familiale en ligne",
+            "description": "Constellation familiale en visio avec un groupe de représentants.",
+            "provider": { "@id": "https://lasystemologie.com/#organization" }
+          },
+          {
+            "@type": "Service",
+            "name": "Constellation sur l'eau",
+            "description": "Constellation en visio individuelle avec le support de l'eau.",
+            "provider": { "@id": "https://lasystemologie.com/#organization" }
+          }
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Questrial&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <script is:inline>
@@ -96,169 +197,181 @@ const karmaResetArchives = [
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Accueil Systémologie">
-        <img src="/logo-systemologie.png" alt="Systémologie" />
+        <img src="/logo-systemologie-white.png" alt="Systémologie" />
       </a>
       <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="/a-propos">À propos</a>
         <a href="#karma-reset">Karma Reset</a>
         <a href="#constellations-en-ligne">En ligne</a>
-        <a href="/constellations-sur-leau">Sur l’eau</a>
+        <a href="/constellations-sur-leau">Sur l'eau</a>
         <a href="#faq">FAQ</a>
       </nav>
       <a class="header-cta" href="#inscription">Recevoir les dates</a>
     </header>
 
     <main id="top">
-      <div class="section-bg-warm">
+      <div class="section-bg-dark hero-page-bg">
         <section class="hero section-shell">
-        <div class="hero-copy reveal-card">
-          <p class="eyebrow">Constellations familiales à Genève</p>
-          <h1>Voir ce qui se répète. Retrouver sa juste place.</h1>
-          <p class="hero-text">
-            Systémologie propose des constellations familiales et systémiques à Genève, en ligne et sur l'eau, dans un cadre clair, humain et sécurisant.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#inscription">Recevoir les prochaines dates Karma Reset</a>
-            <a class="button secondary" href="#formats">Découvrir les formats</a>
+          <div class="hero-copy">
+            <p class="eyebrow">Constellations familiales et systémiques</p>
+            <h1>Voir ce qui se répète. Retrouver sa juste place.</h1>
+            <p class="hero-text">
+              Systémologie propose des constellations familiales et systémiques, en ligne et en présentiel, dans un cadre clair, humain et sécurisant.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#inscription">Recevoir les prochaines dates Karma Reset</a>
+              <a class="button secondary" href="#formats">Découvrir les formats</a>
+            </div>
           </div>
-        </div>
-        <div class="hero-videos">
-          <video autoplay loop muted playsinline>
-            <source src="/karma-reset-ambient.mp4" type="video/mp4" />
-          </video>
-          <video autoplay loop muted playsinline>
-            <source src="/constellation-eau-ambient.mp4" type="video/mp4" />
-          </video>
-        </div>
+          <div class="hero-constellation">
+            <img src="/gemini-constellation.svg" alt="Constellation des Gémeaux" loading="eager" />
+          </div>
+        </section>
+
+        <section class="hero-videos-section section-shell">
+          <div class="hero-videos-intro">
+            <div class="hero-videos">
+              <video autoplay loop muted playsinline>
+                <source src="/karma-reset-ambient.mp4" type="video/mp4" />
+              </video>
+              <video autoplay loop muted playsinline>
+                <source src="/constellation-eau-ambient.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="hero-intro-copy">
+              <p class="eyebrow">Vous savez déjà que vous voulez consteller ?</p>
+              <h2>Le plus important est souvent de sentir si le cadre est juste.</h2>
+              <p>
+                Certaines personnes arrivent ici parce qu'elles connaissent déjà les constellations familiales. D'autres parce qu'une amie, une thérapeute ou une personne de confiance leur a parlé de cette approche.
+              </p>
+              <p>
+                Notre approche est simple : regarder ce qui insiste, sans dramatiser, sans forcer une interprétation, et laisser apparaître le mouvement qui peut être intégré.
+              </p>
+            </div>
+          </div>
         </section>
       </div>
 
-      <section class="intro section-shell narrow">
-        <p class="eyebrow">Vous savez déjà que vous voulez consteller ?</p>
-        <h2>Le plus important est souvent de sentir si le cadre est juste.</h2>
-        <p>
-          Certaines personnes arrivent ici parce qu’elles connaissent déjà les constellations familiales. D’autres parce qu’une amie, une thérapeute ou une personne de confiance leur a parlé de cette approche.
-        </p>
-        <p>
-          Notre approche est simple : regarder ce qui insiste, sans dramatiser, sans forcer une interprétation, et laisser apparaître le mouvement qui peut être intégré.
-        </p>
-      </section>
-
-      <div class="section-bg-sand">
+      <div class="section-bg-light">
         <section class="formats section-shell" id="formats">
-        <div class="section-heading">
-          <p class="eyebrow">Choisir son format</p>
-          <h2>Trois manières d’entrer dans le travail systémique.</h2>
-        </div>
-        <div class="format-grid">
-          {formats.map((format) => (
-            <article class="format-card">
-              <div>
-                <h3>{format.title}</h3>
-                <p>{format.text}</p>
-              </div>
-              {format.price && <p class="price">{format.price}</p>}
-              <a href={format.href}>{format.cta}</a>
-            </article>
-          ))}
-        </div>
-      </section>
+          <div class="section-heading">
+            <p class="eyebrow">Choisir son format</p>
+            <h2>Trois manières d'entrer dans le travail systémique.</h2>
+          </div>
+          <div class="format-grid">
+            {formats.map((format) => (
+              <article class="format-card">
+                <div>
+                  <h3>{format.title}</h3>
+                  <p>{format.text}</p>
+                </div>
+                {format.price && <p class="price">{format.price}</p>}
+                <a href={format.href}>{format.cta}</a>
+              </article>
+            ))}
+          </div>
+        </section>
       </div>
 
-      <div class="section-bg-blue">
+      <div class="section-bg-light">
         <section class="vision section-shell split">
-        <div>
-          <p class="eyebrow">Notre vision</p>
-          <h2>Les constellations ne cherchent pas une explication définitive.</h2>
-        </div>
-        <div class="body-copy">
-          <p>
-            Elles rendent visibles des dynamiques qui agissent parfois en silence : loyautés, exclusions, répétitions, places prises trop tôt, charges portées pour d’autres, mouvements interrompus.
-          </p>
-          <p>
-            Nous les abordons comme un outil expérientiel. Il s’agit de regarder une situation autrement, avec le corps, le ressenti et le système.
-          </p>
-          <p>
-            Ce que nous cherchons : un mouvement juste, intégrable, qui remet un peu plus d’ordre, de clarté et de responsabilité.
-          </p>
-        </div>
+          <div>
+            <p class="eyebrow">Notre vision</p>
+            <h2>Les constellations ne cherchent pas une explication définitive.</h2>
+          </div>
+          <div class="body-copy">
+            <p>
+              Elles rendent visibles des dynamiques qui agissent parfois en silence : loyautés, exclusions, répétitions, places prises trop tôt, charges portées pour d'autres, mouvements interrompus.
+            </p>
+            <p>
+              Nous les abordons comme un outil expérientiel. Il s'agit de regarder une situation autrement, avec le corps, le ressenti et le système.
+            </p>
+            <p>
+              Ce que nous cherchons : un mouvement juste, intégrable, qui remet un peu plus d'ordre, de clarté et de responsabilité.
+            </p>
+          </div>
         </section>
       </div>
 
       <div class="section-bg-violet">
         <section class="pillars section-shell">
-        <div class="section-heading">
-          <p class="eyebrow">Les 4 piliers de Systémologie</p>
-          <h2>Un cadre profond sans devenir flou.</h2>
-        </div>
-        <div class="pillar-grid">
-          <article>
-            <span>01</span>
-            <h3>Cadre</h3>
-            <p>Un espace clair, posé et sécurisant, pour que l’expérience puisse se vivre sans confusion.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Responsabilité</h3>
-            <p>Nous ne cherchons pas des coupables. Nous regardons les places, les liens et ce qui peut être rendu à chacun.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Simplicité</h3>
-            <p>Pas d’interprétation excessive. Nous allons à l’essentiel de ce qui se montre.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Intégration</h3>
-            <p>Une constellation ouvre souvent un mouvement qui continue après la séance.</p>
-          </article>
-        </div>
-        </section>
-      </div>
-
-      <div class="section-bg-warm">
-        <section class="guides section-shell split">
-        <div>
-          <p class="eyebrow">Caroline & Eloa</p>
-          <h2>Deux présences pour tenir un espace vivant et structuré.</h2>
-        </div>
-        <div class="guide-card">
-          <div class="portraits">
-            <img src="/portrait-caroline.png" alt="Portrait de Caroline" loading="lazy" />
-            <img src="/portrait-eloa.png" alt="Portrait d’Eloa" loading="lazy" />
+          <div class="section-heading">
+            <p class="eyebrow">Les 4 piliers de Systémologie</p>
+            <h2>Un cadre profond sans devenir flou.</h2>
           </div>
-          <p>
-            Les constellations Systémologie sont animées par Caroline et Eloa, toutes deux formées aux constellations familiales et systémiques.
-          </p>
-          <p>
-            Caroline apporte une présence intuitive et structurante, avec une attention particulière aux mouvements invisibles et à l’intégration. Eloa apporte sa précision, son énergie directe et sa capacité à faire émerger ce qui demande à être vu.
-          </p>
-        </div>
+          <div class="pillar-grid">
+            <article>
+              <span>01</span>
+              <h3>Cadre</h3>
+              <p>Un espace clair, posé et sécurisant, pour que l'expérience puisse se vivre sans confusion.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Responsabilité</h3>
+              <p>Nous ne cherchons pas des coupables. Nous regardons les places, les liens et ce qui peut être rendu à chacun.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Simplicité</h3>
+              <p>Pas d'interprétation excessive. Nous allons à l'essentiel de ce qui se montre.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Intégration</h3>
+              <p>Une constellation ouvre souvent un mouvement qui continue après la séance.</p>
+            </article>
+          </div>
         </section>
       </div>
 
-      <div class="section-bg-sand">
+      <div class="section-bg-dark">
+        <section class="guides section-shell split">
+          <div>
+            <p class="eyebrow">Caroline & Eloa</p>
+            <h2>Deux présences pour tenir un espace vivant et structuré.</h2>
+          </div>
+          <div class="guide-card">
+            <div class="portraits">
+              <img src="/portrait-caroline.png" alt="Portrait de Caroline" loading="lazy" />
+              <img src="/portrait-eloa.png" alt="Portrait d'Eloa" loading="lazy" />
+            </div>
+            <p>
+              Les constellations Systémologie sont animées par Caroline et Eloa, toutes deux formées aux constellations familiales et systémiques.
+            </p>
+            <p>
+              Caroline apporte une présence intuitive et structurante, avec une attention particulière aux mouvements invisibles et à l'intégration. Eloa apporte sa précision, son énergie directe et sa capacité à faire émerger ce qui demande à être vu.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
         <section class="offer karma section-shell" id="karma-reset">
-        <div class="offer-copy">
-          <p class="eyebrow">Karma Reset à Genève</p>
-          <h2>Une journée pour voir ce qui se répète.</h2>
-          <p>
-            Une journée de constellations familiales et systémiques à Genève, pour explorer un thème personnel dans un cadre de groupe clair, humain et sécurisant.
-          </p>
-          <p>
-            Les journées Karma Reset sont en pause estivale jusqu'en septembre. Inscris-toi à la newsletter Intrications pour recevoir les prochaines dates.
-          </p>
-          <a class="button primary" href="#inscription">Recevoir les prochaines dates</a>
-        </div>
-        <div class="offer-panel">
-          <h3>Ce qu'on peut venir explorer</h3>
-          <ul>
-            <li>Une répétition familiale, relationnelle, professionnelle ou financière.</li>
-            <li>Une difficulté à prendre sa place.</li>
-            <li>Une sensation de porter quelque chose qui ne t'appartient pas entièrement.</li>
-            <li>Une loyauté invisible ou un blocage qui résiste.</li>
-          </ul>
-        </div>
-      </section>
+          <div class="offer-copy">
+            <p class="eyebrow">Karma Reset à Genève</p>
+            <h2>Une journée pour voir ce qui se répète.</h2>
+            <p>
+              Une journée de constellations familiales et systémiques à Genève, pour voir, comprendre et interrompre ce qui se répète.
+            </p>
+            <p>
+              On y explore les dynamiques familiales, relationnelles et transgénérationnelles qui continuent parfois d'agir dans le présent, avec une alternance entre transmission, pratique et intégration.
+            </p>
+            <p>
+              Les journées Karma Reset sont en pause estivale jusqu'en septembre. Inscris-toi à la newsletter Intrications pour recevoir les prochaines dates.
+            </p>
+            <a class="button primary" href="#inscription">Recevoir les prochaines dates</a>
+          </div>
+          <div class="offer-panel">
+            <h3>Ce qu'on peut venir explorer</h3>
+            <ul>
+              <li>Une répétition familiale, relationnelle, professionnelle ou financière.</li>
+              <li>Une difficulté à prendre sa place.</li>
+              <li>Une sensation de porter quelque chose qui ne t'appartient pas entièrement.</li>
+              <li>Une loyauté invisible ou un blocage qui résiste.</li>
+              <li>Une envie de participer comme constellé·e, représentant·e ou observateur·rice.</li>
+            </ul>
+          </div>
+        </section>
       </div>
 
       <section class="karma-archives section-shell" aria-labelledby="karma-archives-title">
@@ -282,68 +395,67 @@ const karmaResetArchives = [
         </div>
       </section>
 
-      <div class="section-bg-water">
-        <section class="offer section-shell" id="constellations-en-ligne">
-        <div class="offer-copy">
-          <p class="eyebrow">Constellation familiale en ligne</p>
-          <h2>Explorer un thème avec le soutien du groupe, en visio.</h2>
-          <p>
-            Il est possible de recevoir sa constellation en ligne, avec un groupe de représentants au service de ton thème.
-          </p>
-
-          <a class="button secondary" href="#kooneo-a-creer">En savoir plus</a>
-        </div>
-        <div class="offer-panel muted">
-          <h3>Ce format peut être juste si tu veux :</h3>
-          <ul>
-            <li>faire une constellation sans venir à Genève ;</li>
-            <li>commencer en ligne ;</li>
-            <li>explorer une répétition ou un blocage ;</li>
-            <li>bénéficier de la force du groupe dans un cadre souple.</li>
-          </ul>
-        </div>
-        </section>
-      </div>
-
       <div class="section-bg-violet">
-        <section class="offer section-shell" id="constellations-sur-leau">
-        <div class="offer-copy">
-          <p class="eyebrow">Constellation sur l’eau par Caroline</p>
-          <h2>Quand le système se pose sur l’eau, quelque chose devient visible.</h2>
-          <p>
-            Un format en visio individuel qui utilise l’eau comme support de représentation. Pour explorer un schéma qui se répète, en individuel, avec douceur et clarté.
-          </p>
-          <a class="button secondary" href="/constellations-sur-leau">Découvrir ce format</a>
-        </div>
-        <div class="offer-panel water">
-          <h3>Pourquoi l’eau ?</h3>
-          <p>
-            L’eau rend visibles les distances, les tensions et les rapprochements. Les éléments posés sur l’eau bougent, s’attirent, s’éloignent ou se stabilisent. Ce mouvement donne parfois accès à une compréhension plus simple que de longues explications.
-          </p>
-        </div>
+        <section class="offer section-shell" id="constellations-en-ligne">
+          <div class="offer-copy">
+            <p class="eyebrow">Constellation familiale en ligne</p>
+            <h2>Explorer un thème avec le soutien du groupe, en visio.</h2>
+            <p>
+              Il est possible de recevoir sa constellation en ligne, avec un groupe de représentants au service de ton thème.
+            </p>
+            <a class="button secondary" href="#kooneo-a-creer">En savoir plus</a>
+          </div>
+          <div class="offer-panel muted">
+            <h3>Ce format peut être juste si tu veux :</h3>
+            <ul>
+              <li>faire une constellation sans venir à Genève ;</li>
+              <li>commencer en ligne ;</li>
+              <li>explorer une répétition ou un blocage ;</li>
+              <li>bénéficier de la force du groupe dans un cadre souple.</li>
+            </ul>
+          </div>
         </section>
       </div>
 
-      <div class="section-bg-blue">
+      <div class="section-bg-dark">
+        <section class="offer section-shell" id="constellations-sur-leau">
+          <div class="offer-copy">
+            <p class="eyebrow">Constellation sur l'eau par Caroline</p>
+            <h2>Quand le système se pose sur l'eau, quelque chose devient visible.</h2>
+            <p>
+              Un format en visio individuel qui utilise l'eau comme support de représentation. Pour explorer un schéma qui se répète, en individuel, avec douceur et clarté.
+            </p>
+            <a class="button secondary" href="/constellations-sur-leau">Découvrir ce format</a>
+          </div>
+          <div class="offer-panel water">
+            <h3>Pourquoi l'eau ?</h3>
+            <p>
+              L'eau rend visibles les distances, les tensions et les rapprochements. Les éléments posés sur l'eau bougent, s'attirent, s'éloignent ou se stabilisent. Ce mouvement donne parfois accès à une compréhension plus simple que de longues explications.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
         <section class="testimonials section-shell" id="testimonials">
-        <div class="section-heading">
-          <p class="eyebrow">Témoignages</p>
-          <h2>Ce que les participant·es en disent.</h2>
-        </div>
-        <div class="testimonial-grid">
-          {testimonials.map((testimonial) => (
-            <figure>
-              <blockquote>“{testimonial.quote}”</blockquote>
-              <figcaption>{testimonial.author}</figcaption>
-            </figure>
-          ))}
-        </div>
+          <div class="section-heading">
+            <p class="eyebrow">Témoignages</p>
+            <h2>Ce que les participant·es en disent.</h2>
+          </div>
+          <div class="testimonial-grid">
+            {testimonials.map((testimonial) => (
+              <figure>
+                <blockquote>"{testimonial.quote}"</blockquote>
+                <figcaption>{testimonial.author}</figcaption>
+              </figure>
+            ))}
+          </div>
         </section>
       </div>
 
       <section class="faq section-shell narrow" id="faq">
         <p class="eyebrow">Questions fréquentes</p>
-        <h2>Constellations familiales Genève : ce qu’il faut savoir.</h2>
+        <h2>Constellations familiales Genève : ce qu'il faut savoir.</h2>
         <details>
           <summary>Où ont lieu les constellations familiales à Genève ?</summary>
           <p>Les journées Karma Reset ont lieu à Genève. Les prochaines dates seront annoncées via la newsletter Intrications.</p>
@@ -354,7 +466,7 @@ const karmaResetArchives = [
         </details>
         <details>
           <summary>Faut-il venir avec un thème précis ?</summary>
-          <p>Un thème clair peut aider, mais ce n’est pas obligatoire. Une sensation de répétition, de blocage ou de question intérieure peut suffire.</p>
+          <p>Un thème clair peut aider, mais ce n'est pas obligatoire. Une sensation de répétition, de blocage ou de question intérieure peut suffire.</p>
         </details>
         <details>
           <summary>Les constellations remplacent-elles une thérapie ?</summary>
@@ -362,42 +474,42 @@ const karmaResetArchives = [
         </details>
       </section>
 
-      <div class="section-bg-warm">
+      <div class="section-bg-violet">
         <section class="newsletter section-shell" id="inscription">
-        <div>
-          <p class="eyebrow">Newsletter Intrications</p>
-          <h2>Recevoir les prochaines dates Karma Reset.</h2>
-          <p>
-            Les journées reprennent après l’été. Inscris-toi pour recevoir les prochaines dates, les thèmes et les ouvertures d’inscription.
-          </p>
-        </div>
-        <form
-          class="newsletter-form mailerlite-form"
-          action="https://assets.mailerlite.com/jsonp/2084998/forms/189057643755603192/subscribe"
-          method="post"
-          target="_blank"
-        >
-          <label>
-            Prénom
-            <input name="fields[name]" type="text" autocomplete="given-name" required />
-          </label>
-          <label>
-            Nom
-            <input name="fields[last_name]" type="text" autocomplete="family-name" required />
-          </label>
-          <label>
-            Email
-            <input name="fields[email]" type="email" autocomplete="email" required />
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="gdpr[]" value="RGPD" required />
-            <span>J'accepte de recevoir la newsletter Intrications et les communications de Systémologie.</span>
-          </label>
-          <input type="hidden" name="ml-submit" value="1" />
-          <input type="hidden" name="anticsrf" value="true" />
-          <button type="submit">Je m'inscris maintenant</button>
-          <p class="form-note">Zéro spam. Désinscription en un clic si ce n'est pas pour toi.</p>
-        </form>
+          <div>
+            <p class="eyebrow">Newsletter Intrications</p>
+            <h2>Recevoir les prochaines dates Karma Reset.</h2>
+            <p>
+              Les journées reprennent après l'été. Inscris-toi pour recevoir les prochaines dates, les thèmes et les ouvertures d'inscription.
+            </p>
+          </div>
+          <form
+            class="newsletter-form mailerlite-form"
+            action="https://assets.mailerlite.com/jsonp/2084998/forms/189057643755603192/subscribe"
+            method="post"
+            target="_blank"
+          >
+            <label>
+              Prénom
+              <input name="fields[name]" type="text" autocomplete="given-name" required />
+            </label>
+            <label>
+              Nom
+              <input name="fields[last_name]" type="text" autocomplete="family-name" required />
+            </label>
+            <label>
+              Email
+              <input name="fields[email]" type="email" autocomplete="email" required />
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="gdpr[]" value="RGPD" required />
+              <span>J'accepte de recevoir la newsletter Intrications et les communications de Systémologie.</span>
+            </label>
+            <input type="hidden" name="ml-submit" value="1" />
+            <input type="hidden" name="anticsrf" value="true" />
+            <button type="submit">Je m'inscris maintenant</button>
+            <p class="form-note">Zéro spam. Désinscription en un clic si ce n'est pas pour toi.</p>
+          </form>
         </section>
       </div>
     </main>

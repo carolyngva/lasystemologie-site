@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/design-system.css';
 ---
 
 <!doctype html>
@@ -9,30 +10,91 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conditions Générales de Vente | Systémologie</title>
     <meta name="description" content="Conditions générales de vente des prestations Systémologie — constellations familiales à Genève et en ligne." />
+    <link rel="canonical" href="https://lasystemologie.com/cgv/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Conditions Générales de Vente | Systémologie" />
+    <meta property="og:description" content="Conditions générales de vente des prestations Systémologie — constellations familiales à Genève et en ligne." />
+    <meta property="og:url" content="https://lasystemologie.com/cgv/" />
+    <meta property="og:image" content="https://lasystemologie.com/logo-systemologie.png" />
+    <meta property="og:site_name" content="Systémologie" />
+    <meta property="og:locale" content="fr_CH" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Conditions Générales de Vente | Systémologie" />
+    <meta name="twitter:description" content="Conditions générales de vente des prestations Systémologie." />
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://lasystemologie.com/#organization",
+        "name": "Systémologie",
+        "url": "https://lasystemologie.com",
+        "logo": "https://lasystemologie.com/logo-systemologie.png",
+        "description": "Constellations familiales et systémiques à Genève, en ligne et sur l'eau.",
+        "email": "info@lasystemologie.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Genève", "addressCountry": "CH" },
+        "founder": [
+          { "@type": "Person", "name": "Caroline Verdier", "url": "https://lasystemologie.com/caroline" },
+          { "@type": "Person", "name": "Hehoa Alvarez", "url": "https://lasystemologie.com/eloa" }
+        ],
+        "knowsAbout": "Constellations familiales et systémiques"
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Questrial&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="/favicon.png" />
+    <style is:inline>
+      .legal h1 {
+        font-size: clamp(1.8rem, 3.5vw, 3.2rem);
+        margin-bottom: 48px;
+      }
+      .legal h2 {
+        font-size: 1.3rem;
+        margin-top: 48px;
+        margin-bottom: 18px;
+      }
+      .legal p {
+        color: rgba(254, 252, 243, 0.7);
+        margin-bottom: 18px;
+        line-height: 1.7;
+      }
+      .legal ul {
+        color: rgba(254, 252, 243, 0.7);
+        margin-bottom: 18px;
+        padding-left: 20px;
+      }
+      .legal li + li {
+        margin-top: 8px;
+      }
+      .legal a {
+        color: var(--or-solaire, #F2B33D);
+        text-decoration: underline;
+      }
+      .legal a:hover {
+        color: var(--blanc-lunaire, #FEFCF3);
+      }
+    </style>
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header legal-header">
       <a class="brand" href="/" aria-label="Accueil Systémologie">
-        <img src="/logo-systemologie.png" alt="Systémologie" />
+        <img src="/logo-systemologie-white.png" alt="Systémologie" />
       </a>
       <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="/a-propos">À propos</a>
         <a href="/#karma-reset">Karma Reset</a>
         <a href="/#constellations-en-ligne">En ligne</a>
-        <a href="/#constellations-sur-leau">Sur l'eau</a>
+        <a href="/constellations-sur-leau">Sur l'eau</a>
         <a href="/#faq">FAQ</a>
       </nav>
       <a class="header-cta" href="/#inscription">Recevoir les dates</a>
     </header>
 
     <main>
-      <div class="section-bg-warm">
+      <div class="section-bg-violet">
         <section class="legal section-shell narrow">
           <p class="eyebrow">Conditions générales de vente</p>
           <h1>CGV</h1>
@@ -108,35 +170,3 @@ import '../styles/global.css';
     </footer>
   </body>
 </html>
-
-<style>
-  .legal h1 {
-    font-size: clamp(1.8rem, 3.5vw, 3.2rem);
-    margin-bottom: 48px;
-  }
-  .legal h2 {
-    font-size: 1.3rem;
-    margin-top: 48px;
-    margin-bottom: 18px;
-  }
-  .legal p {
-    color: var(--muted);
-    margin-bottom: 18px;
-    line-height: 1.7;
-  }
-  .legal ul {
-    color: var(--muted);
-    margin-bottom: 18px;
-    padding-left: 20px;
-  }
-  .legal li + li {
-    margin-top: 8px;
-  }
-  .legal a {
-    color: var(--accent-dark);
-    text-decoration: underline;
-  }
-  .legal a:hover {
-    color: var(--text);
-  }
-</style>

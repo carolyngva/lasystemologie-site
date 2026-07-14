@@ -1,0 +1,258 @@
+---
+import '../styles/global.css';
+import '../styles/design-system.css';
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constellation familiale en ligne — En visio | Systémologie</title>
+    <meta
+      name="description"
+      content="Constellation familiale en ligne avec Systémologie. Explore un thème avec le soutien d'un groupe de représentants, en visio. Un cadre souple et sécurisant."
+    />
+    <link rel="canonical" href="https://lasystemologie.com/constellation-en-ligne/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Constellation familiale en ligne — En visio | Systémologie" />
+    <meta property="og:description" content="Constellation familiale en ligne avec Systémologie. Explore un thème avec le soutien d'un groupe de représentants, en visio." />
+    <meta property="og:url" content="https://lasystemologie.com/constellation-en-ligne/" />
+    <meta property="og:image" content="https://lasystemologie.com/logo-systemologie.png" />
+    <meta property="og:site_name" content="Systémologie" />
+    <meta property="og:locale" content="fr_CH" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Constellation familiale en ligne | Systémologie" />
+    <meta name="twitter:description" content="Constellation familiale en ligne avec Systémologie. Explore un thème avec le soutien d'un groupe de représentants." />
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://lasystemologie.com/#organization",
+            "name": "Systémologie",
+            "url": "https://lasystemologie.com",
+            "logo": "https://lasystemologie.com/logo-systemologie.png",
+            "email": "info@lasystemologie.com",
+            "address": { "@type": "PostalAddress", "addressLocality": "Genève", "addressCountry": "CH" },
+            "founder": [
+              { "@type": "Person", "name": "Caroline Verdier", "url": "https://lasystemologie.com/caroline" },
+              { "@type": "Person", "name": "Hehoa Alvarez", "url": "https://lasystemologie.com/eloa" }
+            ],
+            "knowsAbout": "Constellations familiales et systémiques"
+          },
+          {
+            "@type": "Service",
+            "name": "Constellation familiale en ligne",
+            "description": "Constellation familiale en visio avec un groupe de représentants.",
+            "provider": { "@id": "https://lasystemologie.com/#organization" }
+          }
+        ]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.png" />
+    <style is:inline>
+      .ol-hero {
+        position: relative;
+        display: grid;
+        align-items: center;
+        grid-template-columns: minmax(0, 1.1fr) minmax(200px, 0.9fr);
+        gap: 56px;
+        padding-top: 160px;
+        padding-bottom: 110px;
+        overflow: hidden;
+      }
+      .ol-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 80% 60% at 20% 30%, rgba(44, 30, 64, 0.6) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .ol-hero-fleur {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: min(1100px, 100%);
+        height: auto;
+        aspect-ratio: 1;
+        background: url('/fleurdevieindigo.webp') center / contain no-repeat;
+        opacity: 0.2;
+        pointer-events: none;
+        z-index: 0;
+        filter: brightness(1.35) saturate(0.9);
+        transform: translate(-50%, -50%);
+      }
+      .ol-hero-text {
+        position: relative;
+        z-index: 2;
+      }
+      .ol-hero-text h1 {
+        font-size: clamp(2.4rem, 5vw, 4.2rem);
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        max-width: 700px;
+        margin-bottom: 16px;
+      }
+      .ol-hero-text p {
+        color: rgba(254, 252, 243, 0.7);
+        font-size: 1.15rem;
+        line-height: 1.6;
+        max-width: 560px;
+      }
+      .ol-hero-visual {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+      }
+      .ol-hero-visual img {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        opacity: 0.9;
+        filter: drop-shadow(0 0 60px rgba(242, 179, 61, 0.08));
+      }
+      @media (max-width: 900px) {
+        .ol-hero {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          padding-top: 110px;
+        }
+        .ol-hero-visual img {
+          max-width: 240px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Accueil Systémologie">
+        <img src="/logo-systemologie-white.png" alt="Systémologie" />
+      </a>
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="/a-propos">À propos</a>
+        <a href="/#karma-reset">Karma Reset</a>
+        <a href="/#constellations-en-ligne">En ligne</a>
+        <a href="/constellations-sur-leau">Sur l'eau</a>
+        <a href="/#faq">FAQ</a>
+      </nav>
+      <a class="header-cta" href="/#inscription">Recevoir les dates</a>
+    </header>
+
+    <main>
+      <div class="section-bg-dark">
+        <section class="ol-hero section-shell">
+          <div class="ol-hero-fleur"></div>
+          <div class="ol-hero-text">
+            <p class="eyebrow">Constellation en ligne</p>
+            <h1>Explorer un thème avec le soutien du groupe, en visio.</h1>
+            <p>
+              Il est possible de recevoir sa constellation en ligne, avec un groupe de représentants au service de ton thème. Un cadre souple et sécurisant, sans se déplacer.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#pour-qui">Découvrir le format</a>
+              <a class="button secondary" href="/#faq">Questions fréquentes</a>
+            </div>
+          </div>
+          <div class="ol-hero-visual">
+            <img src="/gemini-constellation.svg" alt="Constellation des Gémeaux" loading="eager" />
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
+        <section class="section-shell narrow" id="pour-qui">
+          <p class="eyebrow" style="text-align: center;">Pour qui ?</p>
+          <h2 style="text-align: center; max-width: 700px; margin: 0 auto 48px;">Ce format peut être juste pour toi si tu veux :</h2>
+          <div style="display: grid; gap: 20px; max-width: 640px; margin: 0 auto;">
+            <div class="offer-panel">
+              <p>Faire une constellation sans venir à Genève.</p>
+            </div>
+            <div class="offer-panel">
+              <p>Commencer par une expérience en ligne avant de venir en présentiel.</p>
+            </div>
+            <div class="offer-panel">
+              <p>Explorer une répétition ou un blocage dans un cadre souple.</p>
+            </div>
+            <div class="offer-panel">
+              <p>Bénéficier de la force du groupe à distance.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-violet">
+        <section class="section-shell narrow">
+          <p class="eyebrow" style="text-align: center;">Comment ça marche</p>
+          <h2 style="text-align: center; max-width: 600px; margin: 0 auto 48px;">Une constellation en visio, en petit groupe.</h2>
+          <div style="display: grid; gap: 24px; max-width: 640px; margin: 0 auto;">
+            <div class="offer-panel">
+              <h3>1. Tu exposes ton thème</h3>
+              <p>Tu arrives avec une question ou une situation que tu souhaites explorer : une répétition relationnelle, un blocage professionnel, une difficulté à prendre ta place.</p>
+            </div>
+            <div class="offer-panel">
+              <h3>2. Le groupe de représentants</h3>
+              <p>Un petit groupe de représentants est présent en visio. Chacun se met au service de ton système, guidé par Caroline ou Eloa.</p>
+            </div>
+            <div class="offer-panel">
+              <h3>3. Le mouvement émerge</h3>
+              <p>Les ressentis des représentants dessinent une cartographie vivante de ton système. Les places, les loyautés et les blocages deviennent visibles.</p>
+            </div>
+            <div class="offer-panel">
+              <h3>4. L'intégration</h3>
+              <p>Les phrases de libération sont dites, les mouvements justes sont posés. Tu repars avec une sensation d'apaisement et une compréhension qui continue de travailler après la séance.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-dark">
+        <section class="section-shell narrow">
+          <p class="eyebrow" style="text-align: center;">Les guides</p>
+          <h2 style="text-align: center; max-width: 600px; margin: 0 auto 18px;">Caroline & Eloa</h2>
+          <p style="color: rgba(254, 252, 243, 0.7); text-align: center; max-width: 600px; margin: 0 auto 34px;">
+            Deux présences complémentaires pour tenir un espace vivant et structuré, même à distance.
+          </p>
+          <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+            <a class="button primary" href="/caroline">Découvrir Caroline</a>
+            <a class="button secondary" href="/eloa">Découvrir Eloa</a>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
+        <section class="section-shell narrow" style="text-align: center;">
+          <p class="eyebrow">Prête à explorer ton thème ?</p>
+          <h2 style="max-width: 600px; margin: 0 auto 18px;">Réserver une constellation en ligne.</h2>
+          <p style="color: var(--ardoise); margin-bottom: 34px;">
+            Les constellations en ligne sont proposées régulièrement. Contacte-nous pour connaître les prochaines dates.
+          </p>
+          <a class="button primary" href="mailto:info@lasystemologie.com">Nous écrire</a>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Systémologie</p>
+          <p>Constellations familiales et systémiques, Genève & en ligne.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://lasystemologie.com/">lasystemologie.com</a>
+          <a href="mailto:info@lasystemologie.com">info@lasystemologie.com</a>
+          <a href="/mentions-legales">Mentions légales</a>
+          <a href="/cgv">CGV</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

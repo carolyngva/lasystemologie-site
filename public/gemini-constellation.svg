@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="100%" height="100%">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="starGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .line { stroke: rgba(255,255,255,0.6); stroke-width: 1.2; fill: none; }
+    .line-faint { stroke: rgba(255,255,255,0.3); stroke-width: 0.8; fill: none; stroke-dasharray: 3,3; }
+    .star { fill: white; }
+    .star-glow { fill: url(#starGrad); }
+    .star-label { fill: rgba(255,255,255,0.35); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 9px; font-weight: 300; letter-spacing: 1px; }
+  </style>
+
+  <!-- Left twin body chain -->
+  <line x1="95" y1="75" x2="155" y2="135" class="line"/>
+  <line x1="155" y1="135" x2="135" y2="225" class="line"/>
+  <line x1="135" y1="225" x2="115" y2="345" class="line"/>
+  <line x1="115" y1="345" x2="165" y2="475" class="line"/>
+  <line x1="115" y1="345" x2="80" y2="490" class="line"/>
+
+  <!-- Right twin body chain -->
+  <line x1="345" y1="155" x2="335" y2="250" class="line"/>
+  <line x1="335" y1="250" x2="315" y2="360" class="line"/>
+  <line x1="315" y1="360" x2="385" y2="450" class="line"/>
+  <line x1="385" y1="450" x2="420" y2="570" class="line"/>
+  <line x1="315" y1="360" x2="280" y2="430" class="line"/>
+  <line x1="280" y1="430" x2="295" y2="535" class="line"/>
+  <line x1="295" y1="535" x2="420" y2="570" class="line"/>
+
+  <!-- Hand connection chains -->
+  <line x1="155" y1="135" x2="235" y2="150" class="line"/>
+  <line x1="235" y1="150" x2="265" y2="210" class="line"/>
+  <line x1="265" y1="210" x2="290" y2="170" class="line"/>
+  <line x1="290" y1="170" x2="345" y2="155" class="line"/>
+
+  <!-- Cross connections between twins -->
+  <line x1="115" y1="345" x2="315" y2="360" class="line-faint"/>
+  <line x1="315" y1="360" x2="165" y2="475" class="line-faint"/>
+  <line x1="115" y1="345" x2="420" y2="570" class="line-faint"/>
+
+  <!-- Star glows (behind stars) -->
+  <!-- Left twin -->
+  <circle cx="95" cy="75" r="18" class="star-glow"/>
+  <circle cx="155" cy="135" r="22" class="star-glow"/>
+  <circle cx="135" cy="225" r="14" class="star-glow"/>
+  <circle cx="115" cy="345" r="16" class="star-glow"/>
+  <circle cx="165" cy="475" r="14" class="star-glow"/>
+  <circle cx="80" cy="490" r="12" class="star-glow"/>
+  <circle cx="235" cy="150" r="10" class="star-glow"/>
+
+  <!-- Right twin -->
+  <circle cx="345" cy="155" r="26" class="star-glow"/>
+  <circle cx="335" cy="250" r="12" class="star-glow"/>
+  <circle cx="315" cy="360" r="14" class="star-glow"/>
+  <circle cx="385" cy="450" r="12" class="star-glow"/>
+  <circle cx="420" cy="570" r="18" class="star-glow"/>
+  <circle cx="280" cy="430" r="10" class="star-glow"/>
+  <circle cx="295" cy="535" r="12" class="star-glow"/>
+  <circle cx="290" cy="170" r="10" class="star-glow"/>
+
+  <!-- Shared hand -->
+  <circle cx="265" cy="210" r="10" class="star-glow"/>
+
+  <!-- Stars -->
+  <!-- Left twin -->
+  <circle cx="95" cy="75" r="2.5" class="star"/>
+  <circle cx="155" cy="135" r="4" class="star"/>
+  <circle cx="135" cy="225" r="2" class="star"/>
+  <circle cx="115" cy="345" r="2.5" class="star"/>
+  <circle cx="165" cy="475" r="2" class="star"/>
+  <circle cx="80" cy="490" r="1.8" class="star"/>
+  <circle cx="235" cy="150" r="1.5" class="star"/>
+
+  <!-- Right twin -->
+  <circle cx="345" cy="155" r="5" class="star"/>
+  <circle cx="335" cy="250" r="1.8" class="star"/>
+  <circle cx="315" cy="360" r="2.5" class="star"/>
+  <circle cx="385" cy="450" r="2" class="star"/>
+  <circle cx="420" cy="570" r="3.5" class="star"/>
+  <circle cx="280" cy="430" r="1.5" class="star"/>
+  <circle cx="290" cy="170" r="1.5" class="star"/>
+  <circle cx="295" cy="535" r="2" class="star"/>
+
+  <!-- Shared hand -->
+  <circle cx="265" cy="210" r="1.5" class="star"/>
+
+  <!-- Labels -->
+  <text x="155" y="115" class="star-label" text-anchor="middle">Castor</text>
+  <text x="345" y="135" class="star-label" text-anchor="middle">Pollux</text>
+  <text x="115" y="325" class="star-label" text-anchor="middle">Mebsuta</text>
+  <text x="315" y="340" class="star-label" text-anchor="middle">Wasat</text>
+  <text x="165" y="498" class="star-label" text-anchor="middle">Tejat</text>
+  <text x="420" y="593" class="star-label" text-anchor="middle">Alhena</text>
+  <text x="80" y="513" class="star-label" text-anchor="middle">Nu</text>
+  <text x="385" y="432" class="star-label" text-anchor="middle">Mekbuda</text>
+  <text x="295" y="558" class="star-label" text-anchor="middle">Alzirr</text>
+  <text x="135" y="208" class="star-label" text-anchor="middle">Tau</text>
+  <text x="335" y="272" class="star-label" text-anchor="middle">Upsilon</text>
+  <text x="235" y="170" class="star-label" text-anchor="middle">Theta</text>
+  <text x="290" y="192" class="star-label" text-anchor="middle">Kappa</text>
+  <text x="265" y="232" class="star-label" text-anchor="middle">Iota</text>
+  <text x="280" y="412" class="star-label" text-anchor="middle">Lambda</text>
+  <text x="95" y="55" class="star-label" text-anchor="middle">Propus</text>
+</svg>
