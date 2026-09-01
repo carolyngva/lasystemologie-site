@@ -1002,7 +1002,11 @@ details p {
   }
 
   .header-cta {
-    display: none;
+    display: inline-flex;
+    flex: 0 0 auto;
+    min-height: 42px;
+    padding: 9px 16px;
+    font-size: 0.86rem;
   }
 
   .section-shell {

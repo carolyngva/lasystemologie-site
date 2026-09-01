@@ -2,18 +2,18 @@
 import '../styles/global.css';
 import '../styles/design-system.css';
 
-const bookingHref = '#kooneo-a-creer';
+const bookingHref = 'https://systemologie.kneo.me/catalog/list';
 
 const dates = [
-  { date: '3 octobre 2026', theme: 'Amour & Couple', text: "Regarder les schémas relationnels, les conflits dans le couple et ce qui empêche l'amour de circuler librement." },
-  { date: '14 novembre 2026', theme: 'Argent', text: "Explorer ce qui se joue autour de la sécurité, de la dette, du manque, de la réussite ou de l'autorisation à recevoir." },
-  { date: '5 décembre 2026', theme: 'Famille', text: 'Remettre de la clarté dans les liens, les conflits entre membres de la famille, les places, les exclusions et les loyautés invisibles.' },
-  { date: '9 janvier 2027', theme: 'Vie pro', text: "Regarder la place dans le monde, face à l'autorité, l'engagement, et les répétitions qui traversent ton rapport au travail." },
-  { date: '6 février 2027', theme: 'Amour & Couple', text: "Regarder les schémas relationnels, les conflits dans le couple et ce qui empêche l'amour de circuler librement." },
-  { date: '6 mars 2027', theme: 'Argent', text: "Explorer ce qui se joue autour de la sécurité, de la dette, du manque, de la réussite ou de l'autorisation à recevoir." },
-  { date: '3 avril 2027', theme: 'Famille', text: 'Remettre de la clarté dans les liens, les conflits entre membres de la famille, les places, les exclusions et les loyautés invisibles.' },
-  { date: '1 mai 2027', theme: 'Vie pro', text: "Regarder la place dans le monde, face à l'autorité, l'engagement, et les répétitions qui traversent ton rapport au travail." },
-  { date: '5 juin 2027', theme: 'Thème libre / nouveau départ', text: "Venir avec le sujet qui appelle le plus ton attention, faire le point sur ce qui a bougé pendant l'année et ouvrir un nouveau mouvement." },
+  { date: '3 octobre 2026', theme: 'Amour & Couple', text: "Regarder les schémas relationnels, les conflits dans le couple et ce qui empêche l'amour de circuler librement.", href: 'https://systemologie.kneo.me/shop/view/KE34C11F' },
+  { date: '14 novembre 2026', theme: 'Argent', text: "Explorer ce qui se joue autour de la sécurité, de la dette, du manque, de la réussite ou de l'autorisation à recevoir.", href: 'https://systemologie.kneo.me/shop/view/X3F34476' },
+  { date: '5 décembre 2026', theme: 'Famille', text: 'Remettre de la clarté dans les liens, les conflits entre membres de la famille, les places, les exclusions et les loyautés invisibles.', href: 'https://systemologie.kneo.me/shop/view/MFE1DD50' },
+  { date: '9 janvier 2027', theme: 'Vie pro', text: "Regarder la place dans le monde, face à l'autorité, l'engagement, et les répétitions qui traversent ton rapport au travail.", href: 'https://systemologie.kneo.me/shop/view/E2272F59' },
+  { date: '6 février 2027', theme: 'Amour & Couple', text: "Regarder les schémas relationnels, les conflits dans le couple et ce qui empêche l'amour de circuler librement.", href: 'https://systemologie.kneo.me/shop/view/A98AC665' },
+  { date: '6 mars 2027', theme: 'Argent', text: "Explorer ce qui se joue autour de la sécurité, de la dette, du manque, de la réussite ou de l'autorisation à recevoir.", href: 'https://systemologie.kneo.me/shop/view/C21AE429' },
+  { date: '3 avril 2027', theme: 'Famille', text: 'Remettre de la clarté dans les liens, les conflits entre membres de la famille, les places, les exclusions et les loyautés invisibles.', href: 'https://systemologie.kneo.me/shop/view/O5027ADC' },
+  { date: '1 mai 2027', theme: 'Vie pro', text: "Regarder la place dans le monde, face à l'autorité, l'engagement, et les répétitions qui traversent ton rapport au travail.", href: 'https://systemologie.kneo.me/shop/view/O395B45D' },
+  { date: '5 juin 2027', theme: 'Thème libre / nouveau départ', text: "Venir avec le sujet qui appelle le plus ton attention, faire le point sur ce qui a bougé pendant l'année et ouvrir un nouveau mouvement.", href: 'https://systemologie.kneo.me/shop/view/D57D4A6A' },
 ];
 
 const themes = [
@@ -142,6 +142,15 @@ const testimonials = [
       .date-card {
         min-height: 300px;
       }
+      .date-card:nth-child(3n + 1) {
+        border-top: 3px solid var(--or-solaire);
+      }
+      .date-card:nth-child(3n + 2) {
+        border-top: 3px solid var(--ardoise);
+      }
+      .date-card:nth-child(3n) {
+        border-top: 3px solid var(--violet-profond);
+      }
       .date-card .date {
         color: var(--or-solaire);
         font-size: 0.88rem;
@@ -174,7 +183,7 @@ const testimonials = [
         <a href="/constellation-en-ligne">En ligne</a>
         <a href="/constellations-sur-leau">Sur l'eau</a>
       </nav>
-      <a class="header-cta" href="#dates">Voir les dates</a>
+      <a class="header-cta" href="https://systemologie.kneo.me/catalog/list" target="_blank" rel="noopener noreferrer">Réserver</a>
     </header>
 
     <main>
@@ -243,7 +252,7 @@ const testimonials = [
                   <h3>{day.theme}</h3>
                   <p>{day.text}</p>
                 </div>
-                <a href={bookingHref}>Réserver</a>
+                <a href={day.href ?? bookingHref} target="_blank" rel="noopener noreferrer">Réserver</a>
               </article>
             ))}
           </div>
@@ -260,7 +269,7 @@ const testimonials = [
             <p>Si tu réserves 3 journées ou plus en une fois, nous t'offrons la réalisation de ton génogramme.</p>
             <p>Le génogramme est une carte visuelle de ton système familial sur plusieurs générations. Il permet de poser ton histoire à plat, non pas pour l'interpréter ou la dramatiser, mais pour repérer les faits marquants, les places, les exclusions, les répétitions et les transmissions qui traversent ton clan.</p>
             <p>C'est souvent un premier mouvement de clarté en soi : voir d'où tu viens, reconnaître ce qui a été porté avant toi, et arriver en constellation avec une lecture plus fine de ton système.</p>
-            <a class="button secondary" href={bookingHref}>Réserver plusieurs journées</a>
+            <a class="button secondary" href={bookingHref} target="_blank" rel="noopener noreferrer">Réserver plusieurs journées</a>
           </div>
         </section>
       </div>
@@ -289,7 +298,7 @@ const testimonials = [
           <div class="offer-panel">
             <p>Une journée Karma Reset alterne constellations, temps d'intégration et transmission. Le cadre est clair, mais le rythme reste vivant : les horaires précis s'ajustent selon le déroulé des constellations et l'énergie du groupe.</p>
             <ul>
-              <li>9h30 : accueil.</li>
+              <li>9h45 : accueil.</li>
               <li>10h : cercle d'ouverture.</li>
               <li>10h15 : première constellation.</li>
               <li>Suite de la journée : deuxième, troisième, quatrième et cinquième constellations.</li>
@@ -325,7 +334,7 @@ const testimonials = [
           <div class="offer-panel">
             <ul>
               <li>Lieu : Shanti Club, Genève.</li>
-              <li>Horaires : 9h30-18h.</li>
+              <li>Horaires : 9h45-18h.</li>
               <li>Tarif constellé·e : 120 CHF la journée.</li>
               <li>Places constellé·es : 5 par journée.</li>
               <li>Repas : non inclus.</li>
