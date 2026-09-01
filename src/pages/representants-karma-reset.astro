@@ -1,0 +1,301 @@
+---
+import '../styles/global.css';
+import '../styles/design-system.css';
+
+const bookingHref = '#kooneo-a-creer';
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Représentant·es Karma Reset | Systémologie</title>
+    <meta name="description" content="Participer à une journée Karma Reset comme représentant·e : une manière accessible de découvrir les constellations familiales de l'intérieur." />
+    <link rel="canonical" href="https://lasystemologie.com/representants-karma-reset/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Représentant·es Karma Reset | Systémologie" />
+    <meta property="og:description" content="Expérimenter une journée Karma Reset de l'intérieur, sans poser son propre thème." />
+    <meta property="og:url" content="https://lasystemologie.com/representants-karma-reset/" />
+    <meta property="og:image" content="https://lasystemologie.com/logo-systemologie.png" />
+    <meta property="og:site_name" content="Systémologie" />
+    <meta property="og:locale" content="fr_CH" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Représentant·es Karma Reset | Systémologie" />
+    <meta name="twitter:description" content="Participer comme représentant·e à une journée de constellations familiales à Genève." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.png" />
+    <style is:inline>
+      .rep-hero {
+        position: relative;
+        display: grid;
+        align-items: center;
+        grid-template-columns: minmax(0, 1.1fr) minmax(200px, 0.9fr);
+        gap: 56px;
+        padding-top: 120px;
+        padding-bottom: 110px;
+        overflow: hidden;
+      }
+      .rep-hero-fleur {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: min(1100px, 100%);
+        aspect-ratio: 1;
+        background: url('/fleurdevieindigo.webp') center / contain no-repeat;
+        opacity: 0.2;
+        pointer-events: none;
+        z-index: 0;
+        filter: brightness(1.35) saturate(0.9);
+        transform: translate(-50%, -50%);
+      }
+      .rep-hero-copy,
+      .rep-hero-visual {
+        position: relative;
+        z-index: 2;
+      }
+      .rep-hero-copy h1 {
+        font-size: clamp(2.4rem, 5vw, 4.2rem);
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        max-width: 760px;
+        margin-bottom: 16px;
+      }
+      .rep-hero-copy p {
+        color: rgba(254, 252, 243, 0.7);
+        font-size: 1.15rem;
+        line-height: 1.6;
+        max-width: 620px;
+      }
+      .rep-hero-visual img {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        margin: 0 auto;
+        opacity: 0.9;
+      }
+      .benefit-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+      @media (max-width: 900px) {
+        .rep-hero,
+        .benefit-grid {
+          grid-template-columns: 1fr;
+        }
+        .rep-hero {
+          padding-top: 90px;
+        }
+        .rep-hero-visual img {
+          max-width: 260px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Accueil Systémologie">
+        <img src="/logo-systemologie-white.png" alt="Systémologie" />
+      </a>
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="/a-propos">À propos</a>
+        <a href="/karma-reset">Karma Reset</a>
+        <a href="/constellation-en-ligne">En ligne</a>
+        <a href="/constellations-sur-leau">Sur l'eau</a>
+      </nav>
+      <a class="header-cta" href={bookingHref}>Réserver</a>
+    </header>
+
+    <main>
+      <div class="section-bg-dark">
+        <section class="rep-hero section-shell">
+          <div class="rep-hero-fleur"></div>
+          <div class="rep-hero-copy">
+            <p class="eyebrow">Karma Reset</p>
+            <h1>Participer comme représentant·e.</h1>
+            <p>Tu n'es pas encore prêt·e à être constellé·e, mais tu aimerais expérimenter une journée Karma Reset de l'intérieur ?</p>
+            <p>En venant comme représentant·e, tu participes à la journée, tu peux être appelé·e à représenter dans les constellations des autres personnes, tu te mets au service du groupe et tu peux recevoir des prises de conscience par résonance.</p>
+            <div class="hero-actions">
+              <a class="button primary" href={bookingHref}>Réserver ma place de représentant·e</a>
+            </div>
+          </div>
+          <div class="rep-hero-visual">
+            <img src="/gemini-constellation.svg" alt="Constellation des Gémeaux" loading="eager" />
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
+        <section class="section-shell narrow">
+          <p class="eyebrow" style="text-align: center;">Introduction</p>
+          <h2 style="text-align: center; max-width: 720px; margin: 0 auto 48px;">Entrer dans l'expérience, avec ton corps, ton ressenti et ta présence.</h2>
+          <div class="body-copy" style="max-width: 760px; margin: 0 auto;">
+            <p>Dans une constellation familiale, les représentant·es tiennent la place d'une personne, d'une émotion, d'un symptôme, d'un blocage, d'une ressource ou d'un autre élément du système.</p>
+            <p>Tu n'as pas besoin de connaître l'histoire de la personne constellée. Tu n'as pas besoin de comprendre mentalement ce qui se passe. Tu te places dans le champ, tu écoutes ce que tu ressens, et tu témoignes simplement de ce qui est présent.</p>
+            <p>Être représentant·e, ce n'est pas observer de loin. C'est entrer dans l'expérience, avec ton corps, ton ressenti et ta présence.</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-violet">
+        <section class="section-shell narrow">
+          <p class="eyebrow" style="text-align: center;">Pour qui ?</p>
+          <h2 style="text-align: center; max-width: 700px; margin: 0 auto 48px;">Cette place peut être juste pour toi si...</h2>
+          <div class="offer-panel">
+            <ul>
+              <li>Tu veux découvrir les constellations familiales avant de poser ton propre thème.</li>
+              <li>Tu sens que le format t'appelle, mais tu préfères commencer autrement.</li>
+              <li>Tu veux vivre une journée de constellation dans un cadre clair et tenu.</li>
+              <li>Tu es curieux·se de comprendre comment les dynamiques systémiques deviennent visibles.</li>
+              <li>Tu as envie de te mettre au service du groupe tout en recevant ce que l'expérience peut t'apporter.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
+        <section class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Ce que tu peux recevoir</p>
+            <h2>Représenter, c'est aussi recevoir.</h2>
+            <p>Être représentant·e n'est pas un rôle passif. Tu ne viens pas seulement aider les autres : tu participes pleinement au champ de la journée.</p>
+            <p>Ce qui se montre dans les constellations peut entrer en résonance avec ton propre système. Une place que tu représentes, une émotion que tu traverses, une phrase entendue ou un mouvement dans le champ peut éclairer quelque chose de ton histoire.</p>
+          </div>
+          <div class="benefit-grid">
+            <article class="offer-panel"><p>Percevoir une dynamique systémique depuis l'intérieur.</p></article>
+            <article class="offer-panel"><p>Ressentir comment une constellation se déploie dans le corps, pas seulement dans la tête.</p></article>
+            <article class="offer-panel"><p>Exercer ta présence, ton ressenti et ton écoute intérieure.</p></article>
+            <article class="offer-panel"><p>Devenir plus fin·e dans ton écoute intéroceptive : sensations corporelles, micro-mouvements, émotions, élans ou résistances.</p></article>
+            <article class="offer-panel"><p>Comprendre autrement les loyautés, exclusions, places, dettes ou mouvements interrompus.</p></article>
+            <article class="offer-panel"><p>Te familiariser avec le travail de constellation avant de choisir, peut-être, d'être constellé·e une autre fois.</p></article>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-dark">
+        <section class="split section-shell">
+          <div>
+            <p class="eyebrow">Ce que ta place comprend</p>
+            <h2>Ta place de représentant·e.</h2>
+          </div>
+          <div class="guide-card">
+            <p>En réservant une place de représentant·e, tu participes à la journée complète Karma Reset.</p>
+            <p>Tu peux être invité·e à représenter dans les constellations des personnes constellées : tenir la place d'un membre de la famille, d'une émotion, d'une ressource, d'un obstacle ou d'un autre élément du système.</p>
+            <p>Tu ne représenteras pas forcément dans toutes les constellations. À certains moments, tu seras peut-être en posture d'observation. Cela n'enlève rien à l'expérience : ce qui se montre dans le champ peut aussi résonner profondément quand tu observes depuis ta place.</p>
+            <p>Tu ne poses pas ton propre thème pendant cette journée. Ta place est d'abord une place de participation, de service et d'expérience.</p>
+            <p>Après la journée, tu reçois un questionnaire de réflexion pour t'aider à intégrer ce que tu as vécu, repérer les résonances personnelles et laisser le travail continuer à se déposer.</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
+        <section class="testimonials section-shell narrow">
+          <div class="section-heading">
+            <p class="eyebrow">Témoignage</p>
+            <h2>Une expérience aussi riche depuis la place de représentant·e.</h2>
+          </div>
+          <div class="testimonial-grid" style="grid-template-columns: 1fr;">
+            <figure>
+              <blockquote>"J'ai participé en tant que représentante. C'est très impressionnant de se sentir partir dans une histoire qui n'est pas la nôtre. J'ai apprécié le cadre, la bienveillance et la bonne ambiance de la journée."</blockquote>
+              <figcaption>Participante</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-violet">
+        <section class="section-shell narrow">
+          <p class="eyebrow" style="text-align: center;">Comment se déroule la journée ?</p>
+          <h2 style="text-align: center; max-width: 700px; margin: 0 auto 48px;">Une journée complète dans le champ du groupe.</h2>
+          <div class="offer-panel">
+            <p>Tu participes à la journée du début à la fin, au même rythme que le groupe.</p>
+            <ul>
+              <li>9h30 : accueil.</li>
+              <li>10h : cercle d'ouverture.</li>
+              <li>10h15 : première constellation.</li>
+              <li>Suite de la journée : constellations des personnes inscrites comme constellé·es, avec des temps où tu peux être représentant·e ou observateur·rice selon ce qui est juste pour le groupe.</li>
+              <li>Pause de midi : selon l'énergie du groupe et le déroulé des constellations.</li>
+              <li>Fin de journée : transmission et clôture.</li>
+              <li>18h : départ de la salle.</li>
+            </ul>
+            <p style="margin-top: 24px; margin-bottom: 0;">Le rythme exact s'ajuste à ce qui se passe pendant la journée.</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
+        <section class="split section-shell">
+          <div>
+            <p class="eyebrow">Infos pratiques</p>
+            <h2>Les détails concrets.</h2>
+          </div>
+          <div class="offer-panel">
+            <ul>
+              <li>Lieu : Shanti Club, Genève.</li>
+              <li>Horaires : 9h30-18h.</li>
+              <li>Tarif représentant·e : 30 CHF.</li>
+              <li>Repas : non inclus.</li>
+              <li>Tu participes à la journée complète.</li>
+              <li>Tu peux représenter dans les constellations des personnes constellées.</li>
+              <li>Tu peux aussi être en posture d'observation sur certaines constellations.</li>
+              <li>Tu ne poses pas ton propre thème pendant cette journée.</li>
+              <li>Tu reçois un questionnaire de réflexion après la journée pour intégrer tes prises de conscience.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-dark">
+        <section class="split section-shell">
+          <div>
+            <p class="eyebrow">Cadre Systémologie</p>
+            <h2>Un cadre profond, clair et respectueux.</h2>
+          </div>
+          <div class="guide-card">
+            <p>Chez Systémologie, nous abordons les constellations comme un outil expérientiel, avec un cadre clair, humain et responsable.</p>
+            <p>Comme représentant·e, tu gardes toujours ta liberté intérieure. Tu peux nommer ce que tu ressens simplement, sans interpréter, sans dramatiser et sans chercher à résoudre l'histoire de l'autre.</p>
+            <p>Le cadre est tenu pour que chacun puisse participer avec respect, présence et sécurité.</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="faq section-shell narrow" id="faq">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions fréquentes.</h2>
+        <details><summary>Est-ce que je dois connaître les constellations pour représenter ?</summary><p>Non. Tu n'as pas besoin d'expérience préalable. Tu seras guidé·e pendant la journée.</p></details>
+        <details><summary>Est-ce que je peux poser mon thème comme représentant·e ?</summary><p>Non. Les représentant·es ne posent pas leur propre thème. Si tu veux que ton sujet soit constellé, il faut réserver une place de constellé·e.</p></details>
+        <details><summary>Est-ce que je peux recevoir quelque chose même si je ne suis pas constellé·e ?</summary><p>Oui. Les constellations des autres peuvent entrer en résonance avec ton propre système. Tu peux repartir avec des prises de conscience personnelles, même sans poser ton thème.</p></details>
+        <details><summary>Est-ce que je représente dans toutes les constellations ?</summary><p>Pas forcément. Tu peux être appelé·e comme représentant·e dans certaines constellations et rester observateur·rice dans d'autres. Dans les deux cas, tu participes au champ de la journée et les résonances peuvent continuer à travailler.</p></details>
+        <details><summary>Est-ce que je participe à toute la journée ?</summary><p>Oui. La place de représentant·e donne accès à la journée complète.</p></details>
+        <details><summary>Est-ce que le repas est inclus ?</summary><p>Non, le repas n'est pas inclus.</p></details>
+      </section>
+
+      <div class="section-bg-violet">
+        <section class="section-shell narrow" style="text-align: center;">
+          <p class="eyebrow">Viens expérimenter Karma Reset de l'intérieur</p>
+          <h2 style="max-width: 720px; margin: 0 auto 18px;">Participer au champ du groupe.</h2>
+          <p style="color: rgba(254, 252, 243, 0.7); max-width: 680px; margin: 0 auto 34px;">Si tu veux découvrir les constellations familiales, participer au champ du groupe et te mettre au service d'un travail profond, la place de représentant·e est une belle porte d'entrée.</p>
+          <a class="button primary" href={bookingHref}>Réserver ma place de représentant·e</a>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-name">Systémologie</p>
+          <p>Constellations familiales et systémiques, Genève & en ligne.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://lasystemologie.com/">lasystemologie.com</a>
+          <a href="mailto:info@lasystemologie.com">info@lasystemologie.com</a>
+          <a href="/mentions-legales">Mentions légales</a>
+          <a href="/cgv">CGV</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

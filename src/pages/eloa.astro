@@ -8,22 +8,19 @@ import '../styles/design-system.css';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eloa / Hehoa Alvarez — Constellations familiales | Systémologie</title>
-    <meta
-      name="description"
-      content="Eloa (Hehoa Alvarez), co-fondatrice de Systémologie. Systemic coach, constellation facilitator et body worker. Accompagne les artistes, dreamers et leaders à arrêter de répéter ce qui ne fonctionne pas."
-    />
+    <title>Eloa Alvarez — Constellations familiales | Systémologie</title>
+    <meta name="description" content="Eloa Alvarez accompagne les dynamiques qui se répètent à travers les constellations familiales, le coaching systémique et une lecture fine des systèmes humains." />
     <link rel="canonical" href="https://lasystemologie.com/eloa/" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Eloa / Hehoa Alvarez — Constellations familiales | Systémologie" />
-    <meta property="og:description" content="Eloa (Hehoa Alvarez), co-fondatrice de Systémologie. Systemic coach, constellation facilitator et body worker." />
+    <meta property="og:title" content="Eloa Alvarez — Constellations familiales | Systémologie" />
+    <meta property="og:description" content="Lire les systèmes. Faire émerger ce qui résiste." />
     <meta property="og:url" content="https://lasystemologie.com/eloa/" />
     <meta property="og:image" content="https://lasystemologie.com/portrait-eloa.png" />
     <meta property="og:site_name" content="Systémologie" />
     <meta property="og:locale" content="fr_CH" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Eloa / Hehoa Alvarez — Constellations familiales | Systémologie" />
-    <meta name="twitter:description" content="Eloa (Hehoa Alvarez), co-fondatrice de Systémologie. Systemic coach, constellation facilitator." />
+    <meta name="twitter:title" content="Eloa Alvarez — Constellations familiales | Systémologie" />
+    <meta name="twitter:description" content="Eloa accompagne les dynamiques qui se répètent à travers les constellations familiales et le coaching systémique." />
     <script type="application/ld+json" is:inline>
       {
         "@context": "https://schema.org",
@@ -38,17 +35,18 @@ import '../styles/design-system.css';
             "address": { "@type": "PostalAddress", "addressLocality": "Genève", "addressCountry": "CH" },
             "founder": [
               { "@type": "Person", "name": "Caroline Verdier", "url": "https://lasystemologie.com/caroline" },
-              { "@type": "Person", "name": "Hehoa Alvarez", "url": "https://lasystemologie.com/eloa" }
+              { "@type": "Person", "name": "Eloa Alvarez", "url": "https://lasystemologie.com/eloa" }
             ],
             "knowsAbout": "Constellations familiales et systémiques"
           },
           {
             "@type": "Person",
-            "name": "Hehoa Alvarez",
+            "name": "Eloa Alvarez",
+            "alternateName": "Hehoa Alvarez",
             "url": "https://lasystemologie.com/eloa",
             "image": "https://lasystemologie.com/portrait-eloa.png",
-            "jobTitle": "Systemic Coach & Constellation Facilitator",
-            "knowsAbout": ["Constellations familiales", "Coaching systémique", "Body work"],
+            "jobTitle": "Coach systémique et facilitatrice en constellations familiales",
+            "knowsAbout": ["Constellations familiales", "Coaching systémique", "Systèmes organisationnels", "Travail corporel"],
             "affiliation": { "@id": "https://lasystemologie.com/#organization" }
           }
         ]
@@ -56,10 +54,7 @@ import '../styles/design-system.css';
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" href="/favicon.png" />
     <style is:inline>
       .about-hero {
@@ -68,23 +63,15 @@ import '../styles/design-system.css';
         align-items: center;
         grid-template-columns: 1fr 1fr;
         gap: 56px;
-        padding-top: 160px;
+        padding-top: 120px;
         padding-bottom: 110px;
         overflow: hidden;
-      }
-      .about-hero::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: radial-gradient(ellipse 80% 60% at 20% 30%, rgba(44, 30, 64, 0.6) 0%, transparent 70%);
-        pointer-events: none;
       }
       .about-hero-fleur {
         position: absolute;
         top: 50%;
         left: 50%;
         width: min(1100px, 100%);
-        height: auto;
         aspect-ratio: 1;
         background: url('/fleurdevieindigo.webp') center / contain no-repeat;
         opacity: 0.2;
@@ -93,7 +80,8 @@ import '../styles/design-system.css';
         filter: brightness(1.35) saturate(0.9);
         transform: translate(-50%, -50%);
       }
-      .about-hero-text {
+      .about-hero-text,
+      .about-hero-img {
         position: relative;
         z-index: 2;
       }
@@ -108,18 +96,13 @@ import '../styles/design-system.css';
         color: rgba(254, 252, 243, 0.7);
         font-size: 1.15rem;
         line-height: 1.6;
-        max-width: 560px;
-      }
-      .about-hero-img {
-        position: relative;
-        z-index: 2;
-        display: flex;
-        justify-content: center;
+        max-width: 620px;
       }
       .about-hero-img img {
         width: 100%;
         max-width: 380px;
         height: auto;
+        margin: 0 auto;
         border-radius: 32px;
         border: 1px solid rgba(254, 252, 243, 0.1);
         box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
@@ -128,7 +111,7 @@ import '../styles/design-system.css';
         .about-hero {
           grid-template-columns: 1fr;
           gap: 40px;
-          padding-top: 110px;
+          padding-top: 90px;
         }
         .about-hero-img img {
           max-width: 280px;
@@ -143,12 +126,11 @@ import '../styles/design-system.css';
       </a>
       <nav class="desktop-nav" aria-label="Navigation principale">
         <a href="/a-propos">À propos</a>
-        <a href="/#karma-reset">Karma Reset</a>
-        <a href="/#constellations-en-ligne">En ligne</a>
+        <a href="/karma-reset">Karma Reset</a>
+        <a href="/constellation-en-ligne">En ligne</a>
         <a href="/constellations-sur-leau">Sur l'eau</a>
-        <a href="/#faq">FAQ</a>
       </nav>
-      <a class="header-cta" href="/#inscription">Recevoir les dates</a>
+      <a class="header-cta" href="/#formats">Voir les formats</a>
     </header>
 
     <main>
@@ -156,11 +138,14 @@ import '../styles/design-system.css';
         <section class="about-hero section-shell">
           <div class="about-hero-fleur"></div>
           <div class="about-hero-text">
-            <p class="eyebrow">Eloa / Hehoa Alvarez</p>
-            <h1>Arrêter de répéter ce qui ne fonctionne pas.</h1>
-            <p>
-              Systemic coach, constellation facilitator, body worker. Eloa accompagne les artistes, les dreamers et les leaders à interrompre leurs schémas à la racine.
-            </p>
+            <p class="eyebrow">Eloa Alvarez</p>
+            <h1>Lire les systèmes. Faire émerger ce qui résiste.</h1>
+            <p>Eloa accompagne les dynamiques qui se répètent à travers les constellations familiales, le coaching systémique et une lecture fine des mécanismes de protection, de contrôle et de résistance.</p>
+            <p>Son travail relie le corps, la famille et les organisations pour rendre visibles les schémas qui agissent en silence et ouvrir un mouvement plus libre.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="/#formats">Découvrir les formats Systémologie</a>
+              <a class="button secondary" href="/karma-reset">Voir Karma Reset à Genève</a>
+            </div>
           </div>
           <div class="about-hero-img">
             <img src="/portrait-eloa.png" alt="Portrait d'Eloa" loading="eager" />
@@ -170,63 +155,56 @@ import '../styles/design-system.css';
 
       <div class="section-bg-light">
         <section class="section-shell narrow">
-          <p class="eyebrow" style="text-align: center;">Son histoire</p>
-          <h2 style="text-align: center; max-width: 720px; margin: 0 auto 48px;">Du corporate project management à la transformation systémique.</h2>
-          <div class="body-copy" style="max-width: 720px; margin: 0 auto;">
-            <p>
-              Eloa a commencé sa carrière dans le monde de l'entreprise — gestion de projet, transformation business, design organisationnel. Pendant des années, elle a aidé des sociétés à se restructurer, s'optimiser et livrer. Et elle était bonne dans ce qu'elle faisait.
-            </p>
-            <p>
-              Mais elle observait toujours la même chose : les mêmes problèmes revenaient. Équipe différente, même conflit. Nouvelle stratégie, même résistance. Réorganisation, mêmes goulots d'étranglement. Elle a compris que ce qu'elle traitait en surface avait des racines qu'aucun PowerPoint ni process map ne pouvait atteindre.
-            </p>
-            <p>
-              Cette prise de conscience l'a menée vers le coaching systémique, les constellations et le travail corporel. Elle s'est formée en facilitation systémique, constellations familiales, bodywork traumatique et coaching organisationnel. Et soudain, tout a pris sens : les dynamiques qu'elle voyait dans les organisations étaient les mêmes que dans les familles.
-            </p>
-            <p>
-              Travel Within est né de cette compréhension : tu n'as pas besoin de devenir une "meilleure version de toi-même". Tu as besoin de devenir assez conscient pour arrêter de répéter.
-            </p>
+          <p class="eyebrow" style="text-align: center;">Parcours</p>
+          <h2 style="text-align: center; max-width: 760px; margin: 0 auto 48px;">Des systèmes d'entreprise aux systèmes familiaux.</h2>
+          <div class="body-copy" style="max-width: 760px; margin: 0 auto;">
+            <p>Avant d'accompagner les constellations familiales, Eloa a travaillé pendant plus de dix ans dans la transformation opérationnelle, la gestion de projet, les ERP et les environnements corporate complexes.</p>
+            <p>Elle y a observé une chose qui allait devenir centrale dans son approche : quand une dynamique n'est pas regardée à la racine, elle revient. Dans une équipe, une famille, une relation, un corps ou une trajectoire professionnelle, les mêmes tensions peuvent changer de forme sans vraiment disparaître.</p>
+            <p>Cette lecture des systèmes l'a menée vers les constellations familiales, le coaching systémique et le travail corporel. Ce qu'elle voyait dans les organisations, elle l'a retrouvé dans les histoires personnelles : des places prises trop tôt, des loyautés invisibles, des protections devenues automatiques, des répétitions qui continuent d'agir longtemps après leur origine.</p>
+            <p>Aujourd'hui, Eloa accompagne ces dynamiques aussi bien dans le privé que dans les systèmes professionnels, avec une approche directe, incarnée et structurée.</p>
           </div>
         </section>
       </div>
 
       <div class="section-bg-violet">
-        <section class="section-shell narrow">
-          <p class="eyebrow" style="text-align: center;">Ses valeurs</p>
-          <h2 style="text-align: center; max-width: 600px; margin: 0 auto 48px;">Ce qui guide son travail.</h2>
-          <div style="display: grid; gap: 24px; max-width: 640px; margin: 0 auto;">
-            <div class="offer-panel">
-              <h3 style="color: var(--or-solaire);">Clarté</h3>
-              <p>Voir ce qui est vraiment là, pas ce qu'on souhaiterait voir. La vérité est plus douce que le schéma.</p>
-            </div>
-            <div class="offer-panel">
-              <h3 style="color: var(--or-solaire);">Courage</h3>
-              <p>Ce travail demande quelque chose. Le vrai changement exige la volonté de regarder là où c'est inconfortable.</p>
-            </div>
-            <div class="offer-panel">
-              <h3 style="color: var(--or-solaire);">Liberté</h3>
-              <p>Le but n'est pas la perfection. C'est la liberté d'arrêter de répéter — et de choisir différemment.</p>
-            </div>
+        <section class="split section-shell">
+          <div>
+            <p class="eyebrow">Formation et pratique</p>
+            <h2>Une pratique formée, incarnée et éprouvée.</h2>
+          </div>
+          <div class="guide-card">
+            <p>Eloa s'est formée aux constellations familiales auprès de Charlotte Aleman, sur un parcours de 14 mois, à l'issue duquel elle a été certifiée.</p>
+            <p>Elle a accompagné une cinquantaine de clients en constellation et totalise environ 130 constellations facilitées, représentées ou reçues.</p>
+            <p>Cette expérience nourrit une posture précise : ne pas plaquer une interprétation sur une histoire, mais écouter ce qui se montre dans le champ, le corps, les places et les mouvements.</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
+        <section class="split section-shell">
+          <div>
+            <p class="eyebrow">Approche</p>
+            <h2>Clarté, précision, responsabilité.</h2>
+          </div>
+          <div class="body-copy">
+            <p>Le travail d'Eloa part d'une question simple : qu'est-ce qui continue d'agir, même quand la personne a déjà compris beaucoup de choses ?</p>
+            <p>Son approche s'intéresse aux mécanismes de protection, aux stratégies de contrôle, aux répétitions relationnelles, aux conflits de place et aux charges qui ne semblent pas appartenir entièrement à la personne.</p>
+            <p>Elle cherche moins à raconter une nouvelle histoire qu'à rendre visible ce qui organise l'ancienne.</p>
+            <p>Le cadre est direct, mais respectueux. Profond, mais lisible. Il laisse de la place à l'intuition sans perdre la responsabilité, et au ressenti sans abandonner la clarté.</p>
           </div>
         </section>
       </div>
 
       <div class="section-bg-dark">
-        <section class="section-shell narrow" style="text-align: center;">
-          <p class="eyebrow">Son approche</p>
-          <h2 style="max-width: 700px; margin: 0 auto 18px;">Trois niveaux pour interrompre les schémas.</h2>
-          <div style="display: grid; gap: 24px; max-width: 640px; margin: 32px auto 0;">
-            <div class="offer-panel" style="text-align: left;">
-              <h3>Le corps</h3>
-              <p>Où les tensions, le stress et les déséquilibres s'accumulent. Le corps parle avant que le mental ne formule.</p>
-            </div>
-            <div class="offer-panel" style="text-align: left;">
-              <h3>La famille</h3>
-              <p>Où les schémas commencent — parfois bien avant nous. Loyautés invisibles, places prises, histoires répétées.</p>
-            </div>
-            <div class="offer-panel" style="text-align: left;">
-              <h3>Le travail</h3>
-              <p>Où ces schémas se rejouent sans qu'on les reconnaisse. Conflits, blocages, plafonds de verre.</p>
-            </div>
+        <section class="split section-shell">
+          <div>
+            <p class="eyebrow">Dans Systémologie</p>
+            <h2>Une lecture précise des endroits où quelque chose résiste.</h2>
+          </div>
+          <div class="guide-card">
+            <p>Dans Systémologie, Eloa apporte une capacité à repérer les points de tension, les contradictions internes et les mécanismes qui maintiennent une répétition en place.</p>
+            <p>Elle accompagne particulièrement les sujets liés à la place, à l'autorité, à l'engagement, aux protections de l'ego, aux schémas professionnels et aux dynamiques qui se répètent malgré un travail personnel déjà engagé.</p>
+            <p>Son rôle dans le duo avec Caroline : amener de la précision, nommer ce qui demande à être vu et soutenir le mouvement sans le forcer.</p>
           </div>
         </section>
       </div>
@@ -234,12 +212,23 @@ import '../styles/design-system.css';
       <div class="section-bg-light">
         <section class="section-shell narrow" style="text-align: center;">
           <p class="eyebrow">Travailler avec Eloa</p>
-          <h2 style="max-width: 600px; margin: 0 auto 18px;">Prête à interrompre tes schémas ?</h2>
-          <p style="color: var(--ardoise); margin-bottom: 34px;">En anglais ou en français, en individuel, en couple ou en groupe.</p>
+          <h2 style="max-width: 680px; margin: 0 auto 18px;">Formats d'accompagnement.</h2>
+          <p style="color: var(--ardoise); max-width: 680px; margin: 0 auto 34px;">Eloa accompagne dans plusieurs formats Systémologie : journées Karma Reset à Genève, constellations en ligne et constellations sur l'eau.</p>
+          <p style="color: var(--ardoise); max-width: 680px; margin: 0 auto 34px;">Elle intervient aussi sur des sujets personnels, relationnels ou professionnels lorsque le travail demande une lecture systémique fine.</p>
           <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-            <a class="button primary" href="https://travel-within.com" target="_blank">Découvrir Travel Within</a>
-            <a class="button secondary" href="/#karma-reset">Voir les Karma Reset à Genève</a>
+            <a class="button primary" href="/karma-reset">Voir Karma Reset à Genève</a>
+            <a class="button secondary" href="/constellation-en-ligne">Découvrir les constellations en ligne</a>
+            <a class="button secondary" href="/constellations-sur-leau">Découvrir les constellations sur l'eau</a>
           </div>
+        </section>
+      </div>
+
+      <div class="section-bg-violet">
+        <section class="section-shell narrow" style="text-align: center;">
+          <p class="eyebrow">Explorer ce qui demande à être vu</p>
+          <h2 style="max-width: 720px; margin: 0 auto 18px;">Les répétitions ne sont pas toujours des erreurs personnelles.</h2>
+          <p style="color: rgba(254, 252, 243, 0.7); max-width: 680px; margin: 0 auto 34px;">Elles peuvent être les signes d'un système qui cherche à être regardé autrement.</p>
+          <a class="button primary" href="/#formats">Découvrir les formats Systémologie</a>
         </section>
       </div>
     </main>
