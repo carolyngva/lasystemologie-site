@@ -120,6 +120,9 @@ import '../styles/design-system.css';
         opacity: 0.9;
         filter: drop-shadow(0 0 60px rgba(242, 179, 61, 0.08));
       }
+      .online-for-who .offer-panel p {
+        color: var(--nuit-bleue);
+      }
       @media (max-width: 900px) {
         .ol-hero {
           grid-template-columns: 1fr;
@@ -171,7 +174,7 @@ import '../styles/design-system.css';
         <section class="section-shell narrow" id="pour-qui">
           <p class="eyebrow" style="text-align: center;">Pour qui ?</p>
           <h2 style="text-align: center; max-width: 700px; margin: 0 auto 48px;">Ce format peut être juste pour toi si tu veux :</h2>
-          <div style="display: grid; gap: 20px; max-width: 640px; margin: 0 auto;">
+          <div class="online-for-who" style="display: grid; gap: 20px; max-width: 640px; margin: 0 auto;">
             <div class="offer-panel">
               <p>Faire une constellation sans venir à Genève.</p>
             </div>
