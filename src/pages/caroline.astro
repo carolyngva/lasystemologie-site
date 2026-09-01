@@ -11,19 +11,19 @@ import '../styles/design-system.css';
     <title>Caroline Verdier — Constellations familiales à Genève | Systémologie</title>
     <meta
       name="description"
-      content="Caroline Verdier, constellatrice à Genève. Supply chain, oracle et constellations familiales. Un parcours entre logistique, intuition et systèmes invisibles."
+      content="Caroline Verdier, constellatrice à Genève. Elle accompagne les systèmes où l'on se perd : couple, argent, travail, famille, valeur personnelle et répétitions transgénérationnelles."
     />
     <link rel="canonical" href="https://lasystemologie.com/caroline/" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="Caroline Verdier — Constellations familiales à Genève | Systémologie" />
-    <meta property="og:description" content="Caroline Verdier, constellatrice à Genève. Supply chain, oracle et constellations familiales." />
+    <meta property="og:description" content="Caroline Verdier accompagne les systèmes où l'on se perd : couple, argent, travail, famille et valeur personnelle." />
     <meta property="og:url" content="https://lasystemologie.com/caroline/" />
     <meta property="og:image" content="https://lasystemologie.com/portrait-caroline.png" />
     <meta property="og:site_name" content="Systémologie" />
     <meta property="og:locale" content="fr_CH" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Caroline Verdier — Constellations familiales | Systémologie" />
-    <meta name="twitter:description" content="Caroline Verdier, constellatrice à Genève. Supply chain, oracle et constellations familiales." />
+    <meta name="twitter:description" content="Lire les systèmes où l'on se perd." />
     <script type="application/ld+json" is:inline>
       {
         "@context": "https://schema.org",
@@ -124,27 +124,13 @@ import '../styles/design-system.css';
         border: 1px solid rgba(254, 252, 243, 0.1);
         box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
       }
-      .timeline {
+      .caroline-grid {
         display: grid;
-        gap: 48px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
       }
-      .timeline-item {
-        display: grid;
-        grid-template-columns: 120px 1fr;
-        gap: 32px;
-      }
-      .timeline-year {
-        color: var(--or-solaire, #F2B33D);
-        font-weight: 700;
-        font-size: 1.1rem;
-        text-align: right;
-      }
-      .timeline-content h3 {
-        margin-bottom: 8px;
-      }
-      .timeline-content p {
-        color: rgba(254, 252, 243, 0.7);
-        line-height: 1.7;
+      .caroline-grid .offer-panel p {
+        color: var(--nuit-bleue);
       }
       @media (max-width: 900px) {
         .about-hero {
@@ -155,12 +141,8 @@ import '../styles/design-system.css';
         .about-hero-img img {
           max-width: 280px;
         }
-        .timeline-item {
+        .caroline-grid {
           grid-template-columns: 1fr;
-          gap: 8px;
-        }
-        .timeline-year {
-          text-align: left;
         }
       }
     </style>
@@ -185,10 +167,17 @@ import '../styles/design-system.css';
           <div class="about-hero-fleur"></div>
           <div class="about-hero-text">
             <p class="eyebrow">Caroline Verdier</p>
-            <h1>Une planificatrice qui croit aux forces invisibles.</h1>
+            <h1>Lire les systèmes où l'on se perd.</h1>
             <p>
-              Supply chain, oracle, constellations familiales. Caroline explore la voie du milieu entre rigueur des systèmes et écoute des forces invisibles.
+              Caroline accompagne les femmes qui ont déjà beaucoup compris, mais qui continuent de se sentir prises dans les mêmes répétitions : couple, travail, argent, valeur personnelle, famille.
             </p>
+            <p>
+              Son approche relie intuition, corps, cadre et constellations pour rendre visible ce qui agit en silence.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="/constellations-sur-leau">Découvrir la constellation sur l'eau</a>
+              <a class="button secondary" href="https://www.instagram.com/carolineverdier.atelier/" target="_blank" rel="noopener noreferrer">Suivre Caroline sur Instagram</a>
+            </div>
           </div>
           <div class="about-hero-img">
             <img src="/portrait-caroline.png" alt="Portrait de Caroline Verdier" loading="eager" />
@@ -198,75 +187,69 @@ import '../styles/design-system.css';
 
       <div class="section-bg-light">
         <section class="section-shell narrow">
-          <p class="eyebrow" style="text-align: center;">Son parcours</p>
-          <h2 style="text-align: center; max-width: 720px; margin: 0 auto 48px;">De la logistique internationale aux constellations familiales.</h2>
+          <p class="eyebrow" style="text-align: center;">Ce qu'elle accompagne</p>
+          <h2 style="text-align: center; max-width: 760px; margin: 0 auto 48px;">Quand tu as beaucoup travaillé sur toi, mais que quelque chose insiste encore.</h2>
           <div class="body-copy" style="max-width: 720px; margin: 0 auto;">
             <p>
-              Pendant plus de 20 ans, Caroline a coordonné des flux logistiques, déployé des ERP, géré des plannings et optimisé des process dans des multinationales — l'aviation, la medtech, les biens de consommation, le transport international. Elle aime les systèmes, la rigueur et l'organisation.
+              Caroline accompagne les personnes qui sentent qu'un sujet revient malgré leur travail intérieur : relation, place, argent, travail, corps, famille ou sentiment de valeur personnelle.
             </p>
             <p>
-              Parallèlement, elle a créé une activité indépendante autour des relations, des oracles, des constellations et de l'accompagnement des femmes. Elle a traversé deux burn-out qui lui ont appris ce que son mental seul ne pouvait pas lui enseigner : son corps lui parle.
+              Le point de départ est souvent cette impression : “je comprends très bien ce qui se passe, et pourtant je me retrouve encore blessée au même endroit”.
             </p>
             <p>
-              Aujourd'hui, elle est constellatrice certifiée et co-anime les journées Karma Reset avec Eloa à Genève. Elle propose également des constellations sur l'eau en visio, un format individuel qu'elle a développé à partir de son histoire personnelle avec l'eau.
-            </p>
-            <p style="margin-top: 32px;">
-              <a class="button primary" href="/constellations-sur-leau">Réserver une constellation sur l'eau</a>
+              La constellation permet de sortir de l'analyse seule pour regarder le système autrement : ce qui a été transmis, ce qui a été porté, ce qui cherche sa place et ce qui peut enfin bouger.
             </p>
           </div>
         </section>
       </div>
 
       <div class="section-bg-violet">
-        <section class="section-shell narrow">
-          <p class="eyebrow" style="text-align: center;">Les étapes qui l'ont construite</p>
-          <h2 style="text-align: center; max-width: 600px; margin: 0 auto 48px;">Un chemin entre logistique et intuition.</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-year">2003 — 2014</div>
-              <div class="timeline-content">
-                <h3>Les racines — Supply Chain & Coordination</h3>
-                <p>Plus de 10 ans dans la logistique internationale : coordination de flux, ERP, process, KPI. De la logistique à Genève aux arômes chez Firmenich, de la medtech chez BD à la pharma cold chain. Formations : BTS Commerce International, Cambridge English.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2014 — 2016</div>
-              <div class="timeline-content">
-                <h3>Le grand large — Voyages et reconnexion</h3>
-                <p>Deux années de sabbatique et de voyage. Pérou, Bolivie, Argentine, Chili, Île de Pâques, Polynésie, Thaïlande, Japon. Un moment fondateur : retrouver le corps, la nature, la lenteur. Formation : Hatha Vinyasa Yoga Teacher Training.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2018 — 2023</div>
-              <div class="timeline-content">
-                <h3>L'éveil — Accompagnement, burn-out, création</h3>
-                <p>Création de son activité indépendante. Deux burn-out traversés. Naissance de l'oracle D'une Rive à l'Autre (42 cartes). Formations : Certificat en hypnose spirituelle (IIHS, 2018), Relationship Coach Certificate (The Relationship School, 2021).</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2025 — 2026</div>
-              <div class="timeline-content">
-                <h3>L'invisible — Constellations et Systémologie</h3>
-                <p>Formation en constellations familiales et systémiques (L'Athanor, 2026), spécialisation sur l'eau (Paula Eskinazi, 2026), BodyWise pour le système nerveux (2025). Co-création de Systémologie avec Eloa. Lancement des Karma Reset à Genève.</p>
-              </div>
-            </div>
+        <section class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Son approche</p>
+            <h2>Voir ce qui agit sous la compréhension.</h2>
+            <p>Le travail de Caroline ne cherche pas à ajouter une nouvelle explication. Il cherche à rendre perceptible ce qui continue d'organiser une situation, même quand la personne a déjà beaucoup analysé.</p>
+          </div>
+          <div class="caroline-grid">
+            <article class="offer-panel">
+              <h3>Le corps</h3>
+              <p>Parce que le mental comprend parfois avant que le système ne se sente réellement en sécurité.</p>
+            </article>
+            <article class="offer-panel">
+              <h3>L'eau</h3>
+              <p>Comme support de représentation, l'eau montre le mouvement réel : ce qui reste figé, ce qui s'éloigne, ce qui cherche sa place.</p>
+            </article>
+            <article class="offer-panel">
+              <h3>Les liens</h3>
+              <p>Couple, famille, travail, argent : les mêmes blessures peuvent changer de scène sans changer de logique.</p>
+            </article>
+            <article class="offer-panel">
+              <h3>Le cadre</h3>
+              <p>Un espace simple, tenu et responsable, pour regarder ce qui agit sans transformer la personne en problème à réparer.</p>
+            </article>
           </div>
         </section>
       </div>
 
       <div class="section-bg-dark">
         <section class="section-shell narrow" style="text-align: center;">
-          <p class="eyebrow">Ce qui la guide</p>
-          <h2 style="max-width: 700px; margin: 0 auto 18px;">Quelques phrases qui inspirent son travail.</h2>
+          <p class="eyebrow">Ce qui l'a construite</p>
+          <h2 style="max-width: 760px; margin: 0 auto 18px;">Je peux travailler sur moi sans partir du principe que je suis le problème.</h2>
+          <p style="color: rgba(254, 252, 243, 0.7); max-width: 720px; margin: 0 auto 34px;">
+            Caroline a longtemps cherché à comprendre pourquoi certains schémas reviennent même quand on a déjà beaucoup travaillé sur soi. Son chemin l'a menée des systèmes visibles aux systèmes familiaux, relationnels et transgénérationnels.
+          </p>
+          <p style="color: rgba(254, 252, 243, 0.7); max-width: 720px; margin: 0 auto 48px;">
+            Deux burn-out, 14 ans de relation, des reconstructions professionnelles et sa formation en constellations ont affiné sa manière d'accompagner : regarder ce qui agit en silence sans transformer la personne en problème à réparer.
+          </p>
           <div style="max-width: 640px; margin: 0 auto; display: grid; gap: 24px;">
             <div class="offer-panel" style="text-align: left;">
-              <p style="font-style: italic; margin-bottom: 0;">"S'isoler n'est pas le chemin. Me laisser happer par le monde non plus. J'explore la voie du milieu."</p>
+              <p style="font-style: italic; margin-bottom: 0;">"Quand un système ne me garde pas, je n'ai pas forcément échoué. Il y a peut-être quelque chose à lire."</p>
             </div>
             <div class="offer-panel" style="text-align: left;">
-              <p style="font-style: italic; margin-bottom: 0;">"Le corps n'est pas le problème. Il est le traducteur que l'intuition utilise pour se faire entendre."</p>
+              <p style="font-style: italic; margin-bottom: 0;">"Comprendre ne suffit pas toujours. Parfois, il faut voir où le mouvement est encore figé."</p>
             </div>
             <div class="offer-panel" style="text-align: left;">
-              <p style="font-style: italic; margin-bottom: 0;">"On peut décider de déconstruire son armure avant qu'elle nous brise. Le choix précède la souffrance."</p>
+              <p style="font-style: italic; margin-bottom: 0;">"Ma différence peut être une donnée. Pas une condamnation."</p>
             </div>
           </div>
         </section>
@@ -275,11 +258,12 @@ import '../styles/design-system.css';
       <div class="section-bg-light">
         <section class="section-shell narrow" style="text-align: center;">
           <p class="eyebrow">Travailler avec Caroline</p>
-          <h2 style="max-width: 600px; margin: 0 auto 18px;">Explorer un schéma qui se répète, en individuel ou en groupe.</h2>
-          <p style="color: var(--ardoise); margin-bottom: 34px;">Constellation sur l'eau en visio, ou journée Karma Reset à Genève.</p>
+          <h2 style="max-width: 680px; margin: 0 auto 18px;">Regarder autrement ce qui insiste.</h2>
+          <p style="color: var(--ardoise); margin-bottom: 34px;">Constellation sur l'eau en visio, journée Karma Reset à Genève, ou contenus réguliers sur Instagram autour du couple, de l'argent, du travail et de la valeur personnelle.</p>
           <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
             <a class="button primary" href="/constellations-sur-leau">Découvrir la constellation sur l'eau</a>
             <a class="button secondary" href="/karma-reset">Voir les Karma Reset</a>
+            <a class="button secondary" href="https://www.instagram.com/carolineverdier.atelier/" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
         </section>
       </div>
