@@ -3,6 +3,7 @@ import '../styles/global.css';
 import '../styles/design-system.css';
 
 const bookingHref = 'https://systemologie.kneo.me/catalog/list';
+const representativeHref = 'https://systemologie.kneo.me/shop/view/VAF22143';
 
 const dates = [
   { date: '3 octobre 2026', theme: 'Amour & Couple', text: "Regarder les schémas relationnels, les conflits dans le couple et ce qui empêche l'amour de circuler librement.", href: 'https://systemologie.kneo.me/shop/view/KE34C11F' },
@@ -15,6 +16,8 @@ const dates = [
   { date: '1 mai 2027', theme: 'Vie pro', text: "Regarder la place dans le monde, face à l'autorité, l'engagement, et les répétitions qui traversent ton rapport au travail.", href: 'https://systemologie.kneo.me/shop/view/O395B45D' },
   { date: '5 juin 2027', theme: 'Thème libre / nouveau départ', text: "Venir avec le sujet qui appelle le plus ton attention, faire le point sur ce qui a bougé pendant l'année et ouvrir un nouveau mouvement.", href: 'https://systemologie.kneo.me/shop/view/D57D4A6A' },
 ];
+
+const nextDay = dates[0];
 
 const themes = [
   { title: 'Amour & Couple', text: "Regarder les schémas relationnels, les conflits dans le couple et ce qui empêche l'amour de circuler librement." },
@@ -157,10 +160,48 @@ const testimonials = [
         letter-spacing: 0.08em;
         text-transform: uppercase;
       }
+      .featured-day {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 0.7fr);
+        gap: 32px;
+        align-items: stretch;
+        padding: 38px;
+        border-radius: var(--radius-soft);
+        background: var(--blanc-lunaire);
+        border: 1px solid rgba(27, 36, 52, 0.1);
+        box-shadow: var(--shadow-card);
+      }
+      .featured-day h2 {
+        color: var(--nuit-bleue);
+        margin-bottom: 16px;
+      }
+      .featured-day p {
+        color: var(--ardoise);
+        line-height: 1.7;
+      }
+      .featured-day-info {
+        display: grid;
+        gap: 14px;
+        align-content: start;
+        padding: 26px;
+        border-radius: 26px;
+        background: rgba(242, 179, 61, 0.12);
+        border: 1px solid rgba(242, 179, 61, 0.28);
+      }
+      .featured-day-info strong {
+        color: var(--nuit-bleue);
+      }
+      .featured-day-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 28px;
+      }
       @media (max-width: 900px) {
         .kr-hero,
         .kr-card-grid,
-        .date-grid {
+        .date-grid,
+        .featured-day {
           grid-template-columns: 1fr;
         }
         .kr-hero {
@@ -196,12 +237,36 @@ const testimonials = [
             <p>Des journées de constellations familiales à Genève pour explorer les répétitions qui traversent ta vie, remettre de la clarté dans ton système et ouvrir un mouvement plus juste.</p>
             <p>Chaque journée accueille 5 personnes maximum pour être constellées.</p>
             <div class="hero-actions">
-              <a class="button primary" href="#dates">Voir les dates</a>
+              <a class="button primary" href="#journee-3-octobre">Réserver le 3 octobre</a>
               <a class="button secondary" href="#deroule">Comment se déroule une journée ?</a>
             </div>
           </div>
           <div class="kr-hero-visual">
             <img src="/gemini-constellation.svg" alt="Constellation des Gémeaux" loading="eager" />
+          </div>
+        </section>
+      </div>
+
+      <div class="section-bg-light">
+        <section class="section-shell" id="journee-3-octobre">
+          <div class="featured-day">
+            <div>
+              <p class="eyebrow">Prochaine journée</p>
+              <h2>{nextDay.date} - {nextDay.theme}</h2>
+              <p>{nextDay.text}</p>
+              <p>Cette journée est ouverte aux personnes qui souhaitent poser leur propre constellation, mais aussi aux représentant·es qui veulent vivre le travail du champ depuis l'intérieur et se mettre au service des constellations du groupe.</p>
+              <div class="featured-day-actions">
+                <a class="button primary" href={nextDay.href} target="_blank" rel="noopener noreferrer">Réserver une place pour consteller</a>
+                <a class="button secondary" href={representativeHref} target="_blank" rel="noopener noreferrer">Venir comme représentant·e</a>
+              </div>
+            </div>
+            <aside class="featured-day-info" aria-label="Infos pratiques de la journée du 3 octobre">
+              <p><strong>Lieu :</strong> Shanti Club, Genève</p>
+              <p><strong>Horaires :</strong> 9h45-18h</p>
+              <p><strong>Place constellé·e :</strong> 120 CHF</p>
+              <p><strong>Places constellé·es :</strong> 5 maximum</p>
+              <p><strong>Thème :</strong> relations amoureuses, couple, répétitions et places dans le lien</p>
+            </aside>
           </div>
         </section>
       </div>
@@ -260,7 +325,7 @@ const testimonials = [
             <p style="color: var(--ardoise); max-width: 620px; margin: 0 auto 20px;">
               Pour participer comme représentant·e, le même lien est utilisé pour toutes les dates. Il réserve une place pour une seule journée Karma Reset. Si tu veux venir à plusieurs journées, il faut réserver une place par date.
             </p>
-            <a class="button primary" href="https://systemologie.kneo.me/shop/view/VAF22143" target="_blank" rel="noopener noreferrer">Réserver une place de représentant·e</a>
+            <a class="button primary" href={representativeHref} target="_blank" rel="noopener noreferrer">Réserver une place de représentant·e</a>
           </div>
         </section>
       </div>
