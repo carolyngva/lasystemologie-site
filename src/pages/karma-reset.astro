@@ -6,8 +6,8 @@ const bookingHref = 'https://systemologie.kneo.me/catalog/list';
 const representativeHref = 'https://systemologie.kneo.me/shop/view/VAF22143';
 
 const dates = [
-  { date: '3 octobre 2026', theme: 'Amour & Couple', text: "Regarder les schémas relationnels, les conflits dans le couple et ce qui empêche l'amour de circuler librement.", href: 'https://systemologie.kneo.me/form/1826001727845bf8.html' },
-  { date: '14 novembre 2026', theme: 'Argent', text: "Explorer ce qui se joue autour de la sécurité, de la dette, du manque, de la réussite ou de l'autorisation à recevoir.", href: 'https://systemologie.kneo.me/shop/view/X3F34476' },
+  { date: '3 octobre 2026', theme: 'Amour & Couple', text: "Regarder les schémas relationnels, les conflits dans le couple et ce qui empêche l'amour de circuler librement.", href: 'https://systemologie.kneo.me/form/1826001727845bf8.html', past: true },
+  { date: '14 novembre 2026', theme: 'Argent', text: "Regarder les schémas relationnels, les loyautés dans le système familial et ce qui empêche l'argent de circuler librement.", href: 'https://systemologie.kneo.me/shop/view/X3F34476' },
   { date: '5 décembre 2026', theme: 'Famille', text: 'Remettre de la clarté dans les liens, les conflits entre membres de la famille, les places, les exclusions et les loyautés invisibles.', href: 'https://systemologie.kneo.me/shop/view/MFE1DD50' },
   { date: '9 janvier 2027', theme: 'Vie pro', text: "Regarder la place dans le monde, face à l'autorité, l'engagement, et les répétitions qui traversent ton rapport au travail.", href: 'https://systemologie.kneo.me/shop/view/E2272F59' },
   { date: '6 février 2027', theme: 'Amour & Couple', text: "Regarder les schémas relationnels, les conflits dans le couple et ce qui empêche l'amour de circuler librement.", href: 'https://systemologie.kneo.me/shop/view/A98AC665' },
@@ -17,7 +17,7 @@ const dates = [
   { date: '5 juin 2027', theme: 'Thème libre / nouveau départ', text: "Venir avec le sujet qui appelle le plus ton attention, faire le point sur ce qui a bougé pendant l'année et ouvrir un nouveau mouvement.", href: 'https://systemologie.kneo.me/shop/view/D57D4A6A' },
 ];
 
-const nextDay = dates[0];
+const nextDay = dates[1];
 
 const themes = [
   { title: 'Amour & Couple', text: "Regarder les schémas relationnels, les conflits dans le couple et ce qui empêche l'amour de circuler librement." },
@@ -145,6 +145,21 @@ const testimonials = [
       .date-card {
         min-height: 300px;
       }
+      .date-card.past-date {
+        background: rgba(27, 36, 52, 0.04);
+        border-color: rgba(27, 36, 52, 0.08);
+        box-shadow: none;
+        opacity: 0.58;
+      }
+      .date-card.past-date .date,
+      .date-card.past-date h3,
+      .date-card.past-date p {
+        color: var(--ardoise);
+      }
+      .date-card .past-label {
+        color: var(--ardoise);
+        font-weight: 600;
+      }
       .date-card:nth-child(3n + 1) {
         border-top: 3px solid var(--or-solaire);
       }
@@ -250,7 +265,7 @@ const testimonials = [
             <p>Des journées de constellations familiales à Genève pour explorer les répétitions qui traversent ta vie, remettre de la clarté dans ton système et ouvrir un mouvement plus juste.</p>
             <p>Chaque journée accueille 5 personnes maximum pour être constellées.</p>
             <div class="hero-actions">
-              <a class="button primary" href={nextDay.href} target="_blank" rel="noopener noreferrer">Réserver le 3 octobre</a>
+              <a class="button primary" href={nextDay.href} target="_blank" rel="noopener noreferrer">Réserver le 14 novembre</a>
               <a class="button secondary" href="#deroule">Comment se déroule une journée ?</a>
             </div>
           </div>
@@ -261,7 +276,7 @@ const testimonials = [
       </div>
 
       <div class="section-bg-light">
-        <section class="section-shell" id="journee-3-octobre">
+        <section class="section-shell" id="journee-14-novembre">
           <div class="featured-day">
             <div>
               <p class="eyebrow">Prochaine journée</p>
@@ -273,12 +288,12 @@ const testimonials = [
                 <a class="button secondary" href={representativeHref} target="_blank" rel="noopener noreferrer">Venir comme représentant·e</a>
               </div>
             </div>
-            <aside class="featured-day-info" aria-label="Infos pratiques de la journée du 3 octobre">
+            <aside class="featured-day-info" aria-label="Infos pratiques de la journée du 14 novembre">
               <p><strong>Lieu :</strong> Shanti Club, Genève</p>
               <p><strong>Horaires :</strong> 9h45-18h</p>
               <p><strong>Place constellé·e :</strong> 120 CHF</p>
               <p><strong>Places constellé·es :</strong> 5 maximum</p>
-              <p><strong>Thème :</strong> relations amoureuses, couple, répétitions et places dans le lien</p>
+              <p><strong>Thème :</strong> argent, loyautés familiales, sécurité, manque et autorisation à recevoir</p>
             </aside>
           </div>
         </section>
@@ -324,13 +339,17 @@ const testimonials = [
           </div>
           <div class="date-grid">
             {dates.map((day) => (
-              <article class="format-card date-card">
+              <article class:list={['format-card', 'date-card', { 'past-date': day.past }]}>
                 <div>
                   <p class="date">{day.date}</p>
                   <h3>{day.theme}</h3>
                   <p>{day.text}</p>
                 </div>
-                <a href={day.href ?? bookingHref} target="_blank" rel="noopener noreferrer">Réserver</a>
+                {day.past ? (
+                  <span class="past-label">Journée déjà passée</span>
+                ) : (
+                  <a href={day.href ?? bookingHref} target="_blank" rel="noopener noreferrer">Réserver</a>
+                )}
               </article>
             ))}
           </div>
